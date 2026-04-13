@@ -22,13 +22,10 @@
 }
 html,body{height:100%;overflow:hidden}
 body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--tx);-webkit-user-select:none;user-select:none}
-
 .ic{font-family:'Material Symbols Outlined';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;direction:ltr;-webkit-font-smoothing:antialiased;font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24}
 .ic-f{font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24}
 .ic-s{font-size:20px}.ic-l{font-size:32px}.ic-xl{font-size:48px}.ic-xxl{font-size:64px}
-
 #app{width:100%;height:100%;max-width:480px;margin:0 auto;display:flex;flex-direction:column;position:relative;overflow:hidden}
-
 .hdr{height:calc(56px + var(--sat));padding-top:var(--sat);display:flex;align-items:center;padding-left:16px;padding-right:8px;flex-shrink:0;z-index:20;background:var(--bg)}
 .hdr h1{font-size:20px;font-weight:900;letter-spacing:-.5px;flex:1}
 .hdr h1 em{font-style:normal;color:var(--pri)}
@@ -36,10 +33,8 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 .hdr-b:active{background:var(--bg3)}
 .hdr-bg{position:absolute;top:8px;right:8px;min-width:16px;height:16px;border-radius:8px;background:var(--err);font-size:9px;font-weight:800;color:#fff;display:none;align-items:center;justify-content:center;padding:0 4px;border:2px solid var(--bg)}
 .hdr-bg.vis{display:flex}
-
 .scr{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
 .scr-in{padding:8px 16px 24px}
-
 .bnav{height:calc(60px + var(--sab));padding-bottom:var(--sab);display:flex;align-items:stretch;background:var(--bg2);border-top:1px solid var(--bdr);flex-shrink:0;z-index:20}
 .bnav-b{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border:none;background:none;cursor:pointer;color:var(--tx3);padding:0}
 .bnav-b .ic{transition:all .15s}
@@ -47,7 +42,6 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 .bnav-b.on{color:var(--pri)}
 .bnav-b.on .ic{font-variation-settings:'FILL' 1,'wght' 500,'GRAD' 0,'opsz' 24}
 .bnav-b:active{opacity:.7}
-
 .fab-w{position:absolute;bottom:calc(68px + var(--sab) + 8px);right:16px;z-index:25}
 .fab{width:56px;height:56px;border-radius:16px;border:none;background:var(--pri);color:var(--bg);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,224,160,.35);transition:all .2s}
 .fab:active{transform:scale(.92)}
@@ -57,22 +51,17 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 .fab-mi{display:flex;align-items:center;gap:10px;cursor:pointer}
 .fab-ml{background:var(--bg4);color:var(--tx);font-size:13px;font-weight:600;padding:10px 16px;border-radius:12px;white-space:nowrap;border:1px solid var(--bdr);box-shadow:0 2px 8px rgba(0,0,0,.3)}
 .fab-mic{width:40px;height:40px;border-radius:12px;background:var(--bg4);border:1px solid var(--bdr);display:flex;align-items:center;justify-content:center;color:var(--pri)}
-
 .cd{background:var(--bg3);border:1px solid var(--bdr);border-radius:16px;overflow:hidden}
 .cd-b{padding:16px}
-
 .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
 .dot-ok{background:var(--pri);box-shadow:0 0 8px rgba(0,224,160,.5)}
 .dot-w{background:var(--wrn);box-shadow:0 0 8px rgba(255,190,48,.4);animation:dp 2s infinite}
 .dot-e{background:var(--err);box-shadow:0 0 8px rgba(255,92,108,.5);animation:dp 1.2s infinite}
 @keyframes dp{0%,100%{opacity:1}50%{opacity:.4}}
-
 .prg{height:6px;background:var(--bg5);border-radius:3px;overflow:hidden}
 .prg-f{height:100%;border-radius:3px;transition:width .5s ease}
-
 .thb{width:52px;height:52px;border-radius:14px;overflow:hidden;background:var(--bg4);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .thb img{width:100%;height:100%;object-fit:cover}
-
 .so{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:100;opacity:0;pointer-events:none;transition:opacity .2s;backdrop-filter:blur(2px)}
 .so.open{opacity:1;pointer-events:auto}
 .ss{position:fixed;bottom:0;left:50%;transform:translateX(-50%) translateY(100%);width:100%;max-width:480px;max-height:90vh;background:var(--bg2);border-radius:24px 24px 0 0;z-index:101;transition:transform .3s cubic-bezier(.2,.9,.3,1);display:flex;flex-direction:column}
@@ -82,7 +71,6 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 .ss-hd h2{font-size:17px;font-weight:800;flex:1}
 .ss-x{width:36px;height:36px;border-radius:18px;border:none;background:var(--bg4);cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--tx2)}
 .ss-sc{flex:1;overflow-y:auto;padding:20px;-webkit-overflow-scrolling:touch}
-
 .fld{margin-bottom:16px}
 .fld-l{display:block;font-size:11px;font-weight:700;color:var(--tx2);margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px}
 .fld-i,.fld-s,.fld-t{width:100%;padding:13px 16px;background:var(--bg4);border:1.5px solid var(--bdr);border-radius:12px;color:var(--tx);font-family:inherit;font-size:14px;outline:none;transition:border-color .15s}
@@ -90,7 +78,6 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 .fld-s{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23607888' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
 .fld-s option{background:var(--bg2);color:var(--tx)}
 .fld-t{resize:vertical;min-height:72px}
-
 .bt{padding:13px 24px;border-radius:12px;font-family:inherit;font-size:14px;font-weight:700;cursor:pointer;border:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:all .12s}
 .bt:active{transform:scale(.97)}
 .bt-p{background:var(--pri);color:var(--bg)}
@@ -98,30 +85,24 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 .bt-d{background:rgba(255,92,108,.1);color:var(--err);border:1px solid rgba(255,92,108,.2)}
 .bt-f{width:100%}
 .bt-sm{padding:8px 16px;font-size:12px;border-radius:10px}
-
 .pu{width:100%;height:140px;border:2px dashed var(--bdr);border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;overflow:hidden;position:relative}
 .pu:active{border-color:var(--pri);background:var(--pri-bg)}
 .pu img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-
 .tgl{width:50px;height:28px;border-radius:14px;background:var(--bg5);border:2px solid var(--bdr);position:relative;cursor:pointer;transition:all .2s;flex-shrink:0}
 .tgl.on{background:var(--pri-bg);border-color:var(--pri)}
 .tgl::after{content:'';position:absolute;width:20px;height:20px;border-radius:10px;background:var(--tx3);top:2px;left:2px;transition:all .2s}
 .tgl.on::after{transform:translateX(22px);background:var(--pri)}
-
 .sb{position:fixed;bottom:calc(68px + var(--sab) + 12px);left:50%;transform:translateX(-50%) translateY(80px);max-width:420px;width:calc(100% - 32px);z-index:200;transition:transform .25s cubic-bezier(.2,.9,.3,1);pointer-events:none}
 .sb.vis{transform:translateX(-50%) translateY(0);pointer-events:auto}
 .sb-in{background:#e8ece8;color:#1a2a1a;padding:13px 18px;border-radius:12px;font-size:13px;font-weight:600;display:flex;align-items:center;gap:10px;box-shadow:0 4px 16px rgba(0,0,0,.4)}
-
 .np-bg{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:80;opacity:0;pointer-events:none;transition:opacity .2s}
 .np-bg.open{opacity:1;pointer-events:auto}
 .np-p{position:fixed;top:0;left:50%;transform:translateX(-50%) translateY(-100%);width:100%;max-width:480px;max-height:70vh;background:var(--bg2);border-radius:0 0 24px 24px;z-index:81;transition:transform .3s cubic-bezier(.2,.9,.3,1);overflow-y:auto}
 .np-p.open{transform:translateX(-50%) translateY(0)}
-
 .empty{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 20px}
 .empty-ic{width:88px;height:88px;border-radius:44px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
 .empty h3{font-size:17px;font-weight:800;margin-bottom:6px}
 .empty p{font-size:13px;color:var(--tx3);line-height:1.6;max-width:260px}
-
 .sl{font-size:13px;font-weight:700;color:var(--tx2);margin:20px 0 10px;display:flex;align-items:center;justify-content:space-between}
 .km-n{font-size:36px;font-weight:900;letter-spacing:-1.5px;line-height:1}
 .km-n small{font-size:14px;font-weight:500;color:var(--tx2);margin-left:2px}
@@ -129,7 +110,6 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 .chip{display:inline-flex;align-items:center;padding:7px 14px;border-radius:20px;font-size:12px;font-weight:600;border:1px solid var(--bdr);background:var(--bg4);cursor:pointer;color:var(--tx2);white-space:nowrap}
 .chip:active{transform:scale(.95)}
 .chip.on{background:var(--pri-bg);border-color:var(--pri);color:var(--pri)}
-
 .ig{background:var(--bg3);border:1px solid var(--bdr);border-radius:16px;overflow:hidden;margin-bottom:12px}
 .ig-h{padding:14px 16px;display:flex;align-items:center;gap:12px;cursor:pointer}
 .ig-h:active{background:var(--bg4)}
@@ -145,7 +125,6 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 .tip{background:rgba(255,190,48,.08);border:1px solid rgba(255,190,48,.15);border-radius:12px;padding:14px 16px;margin-top:12px}
 .tip p{font-size:12px;line-height:1.6}
 .tip strong{color:var(--wrn)}
-
 @keyframes fi{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 .pg-in{animation:fi .25s ease}
 ::-webkit-scrollbar{width:2px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--bdr);border-radius:2px}
@@ -163,366 +142,161 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 <div class="np-bg" id="nb" onclick="RC.toggleNotif()"></div>
 <div class="np-p" id="np"><div style="padding:16px 20px 12px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--bdr)"><h2 style="font-size:17px;font-weight:800">Notifikasi</h2><button onclick="RC.toggleNotif()" style="background:none;border:none;cursor:pointer"><span class="ic" style="color:var(--tx2)">close</span></button></div><div id="nl" style="padding:12px 16px 32px"></div></div>
 <div class="sb" id="sb"><div class="sb-in" id="sbi"><span class="ic ic-f" style="font-size:20px">check_circle</span><span id="sbt"></span></div></div>
-
 <script>
-/* Semua logika dibungkus dalam satu object RC agar tidak konflik */
-var RC = (function(){
-  /* ====== DATA ====== */
-  var SK='rc5',CK='rc5c';
-  var SV=[
-    {type:'oil',label:'Ganti Oli Mesin',icon:'water_drop',color:'#00b4d8',ki:5000,di:180},
-    {type:'filter',label:'Ganti Filter Udara',icon:'filter_alt',color:'#e9c46a',ki:10000,di:365},
-    {type:'brake',label:'Cek Rem',icon:'shield',color:'#ff6b6b',ki:15000,di:180},
-    {type:'battery',label:'Cek Aki/Baterai',icon:'battery_charging_full',color:'#a78bfa',ki:20000,di:365}
-  ];
-  var BM=['Honda','Yamaha','Suzuki','Kawasaki','TVS','Benelli','Vespa','Kymco','Triumph','Ducati'];
-  var BC=['Toyota','Honda','Daihatsu','Suzuki','Mitsubishi','Nissan','BMW','Mercedes','Hyundai','Kia','Wuling','Mazda'];
+var RC=(function(){
+var SK='rc6',CK='rc6c';
+var SV=[{type:'oil',label:'Ganti Oli Mesin',icon:'water_drop',color:'#00b4d8',ki:5000,di:180},{type:'filter',label:'Ganti Filter Udara',icon:'filter_alt',color:'#e9c46a',ki:10000,di:365},{type:'brake',label:'Cek Rem',icon:'shield',color:'#ff6b6b',ki:15000,di:180},{type:'battery',label:'Cek Aki/Baterai',icon:'battery_charging_full',color:'#a78bfa',ki:20000,di:365}];
+var BM=['Honda','Yamaha','Suzuki','Kawasaki','TVS','Benelli','Vespa','Kymco','Triumph','Ducati'];
+var BC=['Toyota','Honda','Daihatsu','Suzuki','Mitsubishi','Nissan','BMW','Mercedes','Hyundai','Kia','Wuling','Mazda'];
+var S={v:[],sel:null,pg:'home'},C={rd:7,rk:500,nf:true},fO=false,uP='',dI=null,isFl=location.protocol==='file:';
+function ld(){try{var a=localStorage.getItem(SK);if(a)S=JSON.parse(a);var b=localStorage.getItem(CK);if(b)C=JSON.parse(b)}catch(e){}}
+function sv(){try{localStorage.setItem(SK,JSON.stringify(S));localStorage.setItem(CK,JSON.stringify(C))}catch(e){}}
+function uid(){return Date.now().toString(36)+Math.random().toString(36).substr(2,6)}
+function fn(n){return n?n.toLocaleString('id-ID'):'0'}
+function fd(d){return d?new Date(d).toLocaleDateString('id-ID',{day:'numeric',month:'short',year:'numeric'}):'-'}
+function fm(n){return'Rp '+fn(n)}
+function dd(a,b){return Math.floor((b-a)/864e5)}
+function sI(t){for(var i=0;i<SV.length;i++)if(SV[i].type===t)return SV[i].icon;return'build'}
+function sC(t){for(var i=0;i<SV.length;i++)if(SV[i].type===t)return SV[i].color;return'#607888'}
+function sL(t){for(var i=0;i<SV.length;i++)if(SV[i].type===t)return SV[i].label;return t}
+function calc(v,s){var now=new Date(),last=s.lastDate?new Date(s.lastDate):now,days=dd(last,now),km=v.currentKm-s.lastKm,pk=s.intervalKm>0?km/s.intervalKm:0,pd=s.intervalDays>0?days/s.intervalDays:0,p=Math.max(pk,pd,0),lv='ok';if(p>=1)lv='e';else if(p>=.75)lv='w';return{p:Math.min(p,1.2),lv:lv,rk:Math.max(s.intervalKm-km,0),rd:Math.max(s.intervalDays-days,0)}}
+function vS(v){if(!v.services||!v.services.length)return'ok';var w='ok',rank={ok:0,w:1,e:2};for(var i=0;i<v.services.length;i++){var l=calc(v,v.services[i]).lv;if(rank[l]>rank[w])w=l}return w}
+var LT={ok:'Aman',w:'Mendekati Servis',e:'Harus Servis'},LC={ok:'var(--pri)',w:'var(--wrn)',e:'var(--err)'},DC={ok:'dot-ok',w:'dot-w',e:'dot-e'};
+function gA(){var list=[];for(var i=0;i<S.v.length;i++){var v=S.v[i];if(!v.services)continue;for(var j=0;j<v.services.length;j++){var s=v.services[j],c=calc(v,s);if(c.lv==='e')list.push({lv:'e',m:v.name+': '+s.label+' melewati jadwal!'});else if(c.rd<=C.rd||c.rk<=C.rk)list.push({lv:'w',m:v.name+': '+s.label+(c.rd>0?' '+c.rd+' hari':c.rk+' km')+' lagi'})}}list.sort(function(a,b){return(a.lv==='e'?0:1)-(b.lv==='e'?0:1)});return list}
+function uBg(){var n=gA(),el=document.getElementById('hbg');if(n.length>0){el.classList.add('vis');el.textContent=n.length>9?'9+':n.length}else el.classList.remove('vis')}
+function rNL(){var n=gA(),el=document.getElementById('nl');if(!n.length){el.innerHTML='<div style="text-align:center;padding:40px;color:var(--tx3)"><span class="ic ic-xl" style="display:block;margin-bottom:12px;color:var(--bdr)">notifications_off</span><p style="font-size:13px">Tidak ada notifikasi</p></div>';return}var h='';for(var i=0;i<n.length;i++){var x=n[i],bg=x.lv==='e'?'var(--err-bg)':'var(--wrn-bg)';h+='<div style="display:flex;gap:10px;padding:12px;border-radius:12px;margin-bottom:6px;background:'+bg+'"><span class="ic ic-s" style="color:'+(x.lv==='e'?'var(--err)':'var(--wrn)')+'">'+(x.lv==='e'?'error':'warning')+'</span><p style="font-size:12px;font-weight:600;line-height:1.5">'+x.m+'</p></div>'}el.innerHTML=h}
+function toast(msg,type){var el=document.getElementById('sb'),inner=document.getElementById('sbi'),txt=document.getElementById('sbt');if(!type)type='ok';var icons={ok:'check_circle',err:'error',warn:'warning'},colors={ok:'color:var(--pri)',err:'color:var(--err)',warn:'color:var(--wrn)'};inner.querySelector('.ic').textContent=icons[type];inner.querySelector('.ic').setAttribute('style','font-size:20px;'+colors[type]);txt.textContent=msg;el.classList.add('vis');clearTimeout(el._t);el._t=setTimeout(function(){el.classList.remove('vis')},3000)}
+function toggleFab(){fO=!fO;document.getElementById('fb').classList.toggle('open',fO);document.getElementById('fm').classList.toggle('open',fO)}
+function closeFab(){fO=false;document.getElementById('fb').classList.remove('open');document.getElementById('fm').classList.remove('open')}
+function openSheet(html){document.getElementById('ssc').innerHTML=html;document.getElementById('so').classList.add('open');document.body.style.overflow='hidden'}
+function closeSheet(){document.getElementById('so').classList.remove('open');document.body.style.overflow=''}
+function toggleNotif(){var p=document.getElementById('np'),b=document.getElementById('nb'),o=p.classList.contains('open');if(o){p.classList.remove('open');b.classList.remove('open')}else{rNL();p.classList.add('open');b.classList.add('open')}}
+function go(pg){closeFab();S.pg=pg;sv();var btns=document.querySelectorAll('.bnav-b');for(var i=0;i<btns.length;i++)btns[i].classList.toggle('on',btns[i].getAttribute('data-p')===pg);render();uBg();document.getElementById('scr').scrollTop=0}
+function render(){var el=document.getElementById('pg');if(S.pg==='home')el.innerHTML=pHome();else if(S.pg==='veh')el.innerHTML=pVeh();else if(S.pg==='sch')el.innerHTML=pSch();else if(S.pg==='his')el.innerHTML=pHis()}
+function gSel(){if(S.sel)for(var i=0;i<S.v.length;i++)if(S.v[i].id===S.sel)return S.v[i];return S.v[0]||null}
+function selV(id){S.sel=id;sv();render()}
+/* Helper: bikin input dengan autocomplete OFF */
+function inp(tp,id,val,min,max,ph){return'<input class="fld-i" id="'+id+'" type="'+tp+'"'+(val!==undefined?' value="'+val+'"':'')+(min!==undefined?' min="'+min+'"':'')+(max!==undefined?' max="'+max+'"':'')+(ph?' placeholder="'+ph+'"':'')+' autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">'}
+function sel(id,opts){var h='<select class="fld-s" id="'+id+'" autocomplete="off">';for(var i=0;i<opts.length;i++)h+='<option value="'+opts[i].v+'"'+(opts[i].s?' selected':'')+'>'+opts[i].t+'</option>';h+='</select>';return h}
 
-  var S={v:[],sel:null,pg:'home'};
-  var C={rd:7,rk:500,nf:true};
-  var fO=false,uP='',dI=null;
-  var isFl=location.protocol==='file:';
+function pHome(){
+if(!S.v.length)return'<div class="pg-in"><div class="empty" style="padding-top:48px"><div class="empty-ic" style="background:var(--pri-bg);border:2px solid var(--pri-bdr)"><span class="ic ic-xxl" style="color:var(--pri)">directions_car</span></div><h3>Selamat Datang</h3><p>Tambahkan kendaraan pertama untuk mulai memantau jadwal servis.</p><button class="bt bt-p" style="margin-top:24px" onclick="RC.openAddV()"><span class="ic ic-s">add</span>Tambah Kendaraan</button></div>'+igB()+'</div>';
+var v=gSel();if(!v)return pHome();var ov=vS(v),items=[];if(v.services)for(var i=0;i<v.services.length;i++)items.push({s:v.services[i],c:calc(v,v.services[i])});items.sort(function(a,b){return b.c.p-a.c.p});var up=items.filter(function(x){return x.c.lv!=='ok'}).sort(function(a,b){return a.c.rd-b.c.rd});
+var h='<div class="pg-in"><div class="cd" style="margin-top:4px;border-color:var(--pri-bdr);box-shadow:0 0 20px var(--pri-bg)"><div class="cd-b"><div style="display:flex;gap:14px;align-items:center"><div class="thb" style="width:60px;height:60px;border-radius:16px">'+(v.photo?'<img src="'+v.photo+'">':'<span class="ic ic-l" style="color:var(--pri)">'+(v.type==='motor'?'two_wheeler':'directions_car')+'</span>')+'</div><div style="flex:1;min-width:0"><h2 style="font-size:16px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+v.name+'</h2><p style="font-size:12px;color:var(--tx2);margin-top:2px">'+v.brand+(v.type==='motor'?' Motor':' Mobil')+' &bull; '+v.year+'</p><div style="display:flex;align-items:center;gap:6px;margin-top:6px"><span class="dot '+DC[ov]+'"></span><span style="font-size:11px;font-weight:700;color:'+LC[ov]+'">'+LT[ov]+'</span></div></div>';
+if(S.v.length>1)h+='<button onclick="RC.cyV()" class="bt bt-sm bt-s" style="padding:6px 10px"><span class="ic ic-s">swap_horiz</span></button>';
+h+='</div><div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--bdr);display:flex;align-items:baseline;gap:4px"><span class="km-n">'+fn(v.currentKm)+'<small>km</small></span><button onclick="RC.openUKm(\''+v.id+'\')" class="bt bt-sm bt-s" style="margin-left:auto;padding:5px 12px;color:var(--pri);border-color:var(--pri-bdr)">Update KM</button></div></div></div>';
+if(S.v.length>1){h+='<div style="display:flex;gap:6px;margin-top:10px;overflow-x:auto;padding-bottom:2px">';for(var i=0;i<S.v.length;i++){var vv=S.v[i],sel=vv.id===v.id;h+='<div onclick="RC.selV(\''+vv.id+'\')" style="display:flex;align-items:center;gap:6px;padding:7px 12px;border-radius:20px;cursor:pointer;white-space:nowrap;border:1px solid '+(sel?'var(--pri)':'var(--bdr)')+';background:'+(sel?'var(--pri-bg)':'var(--bg3)')+'"><span class="dot '+DC[vS(vv)]+'" style="width:8px;height:8px"></span><span style="font-size:11px;font-weight:600;color:'+(sel?'var(--pri)':'var(--tx2)')+'">'+vv.name+'</span></div>'}h+='</div>'}
+h+='<div class="sl"><span>Status Servis</span><span style="font-size:11px;color:var(--tx3)">'+items.length+' item</span></div><div style="display:flex;flex-direction:column;gap:8px">';
+for(var i=0;i<items.length;i++){var it=items[i],cl=it.c.lv==='e'?'var(--err)':it.c.lv==='w'?'var(--wrn)':'var(--pri)';h+='<div class="cd" style="cursor:pointer" onclick="RC.openSD(\''+v.id+'\',\''+it.s.id+'\')"><div class="cd-b" style="padding:14px;display:flex;align-items:center;gap:12px"><div style="width:38px;height:38px;border-radius:10px;background:'+sC(it.s.type)+'15;display:flex;align-items:center;justify-content:center;flex-shrink:0"><span class="ic ic-s" style="color:'+sC(it.s.type)+'">'+sI(it.s.type)+'</span></div><div style="flex:1;min-width:0"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px"><span style="font-size:13px;font-weight:700">'+it.s.label+'</span><span class="dot '+DC[it.c.lv]+'"></span></div><div class="prg"><div class="prg-f" style="width:'+Math.min(it.c.p*100,100)+'%;background:'+cl+'"></div></div><div style="display:flex;justify-content:space-between;margin-top:4px"><span style="font-size:10px;color:var(--tx3)">'+(it.c.rk>0?fn(it.c.rk)+' km tersisa':'Jatuh tempo')+'</span><span style="font-size:10px;color:var(--tx3)">'+(it.c.rd>0?it.c.rd+' hari':'Jatuh tempo')+'</span></div></div></div></div>'}
+h+='</div>';
+if(up.length){h+='<div class="sl">Servis Mendatang</div><div class="cd" style="padding:0">';for(var i=0;i<up.length;i++){var u=up[i];h+='<div style="display:flex;align-items:center;gap:12px;padding:11px 16px"><span class="ic ic-s" style="color:'+sC(u.s.type)+'">'+sI(u.s.type)+'</span><div style="flex:1"><p style="font-size:13px;font-weight:600">'+u.s.label+'</p><p style="font-size:11px;color:var(--tx3)">'+(u.c.rd>0?u.c.rd+' hari / '+fn(u.c.rk)+' km':'Segera!')+'</p></div><span class="dot '+DC[u.c.lv]+'"></span></div>'}h+='</div>'}
+h+='<div class="sl"><span>Riwayat Terakhir</span><button onclick="RC.go(\'his\')" style="background:none;border:none;cursor:pointer;font-size:12px;color:var(--pri);font-weight:600;font-family:inherit">Lihat Semua</button></div><div class="cd" style="padding:0">';
+if(!v.history||!v.history.length)h+='<p style="font-size:13px;color:var(--tx3);text-align:center;padding:20px">Belum ada riwayat</p>';
+else{var show=v.history.slice(-3).reverse();for(var i=0;i<show.length;i++){var hi=show[i];h+='<div class="hr"><div style="width:34px;height:34px;border-radius:8px;background:'+sC(hi.serviceType)+'15;display:flex;align-items:center;justify-content:center;flex-shrink:0"><span class="ic" style="font-size:17px;color:'+sC(hi.serviceType)+'">'+sI(hi.serviceType)+'</span></div><div style="flex:1;min-width:0"><p style="font-size:13px;font-weight:600">'+(hi.description||sL(hi.serviceType))+'</p><p style="font-size:11px;color:var(--tx3)">'+fd(hi.date)+(hi.km?' &bull; '+fn(hi.km)+' km':'')+'</p></div><span style="font-size:12px;font-weight:700;color:var(--pri)">'+(hi.cost?fm(hi.cost):'-')+'</span></div>'}}
+h+='</div></div>';return h}
+function cyV(){var i=0;for(;i<S.v.length;i++)if(S.v[i].id===S.sel)break;selV(S.v[(i+1)%S.v.length].id)}
+function igB(){if(dI)return'<div class="ig" style="background:var(--pri-bg);border-color:var(--pri-bdr);margin-top:4px" onclick="RC.doInst()"><div class="ig-h"><div class="ig-n" style="background:rgba(0,224,160,.15);color:var(--pri)"><span class="ic">download</span></div><div class="ig-i"><p style="color:var(--pri)">Install RideCheck</p><small style="color:var(--pri);opacity:.8">Tap untuk pasang di homescreen</small></div></div></div>';if(!isFl)return'';return'<div style="margin-top:8px">'+igC('1','Netlify Drop (Paling Cepat)','30 detik, tanpa install apapun','var(--pri)','var(--pri-bg)','Rekomendasi','<ol><li>Buka <code>app.netlify.com/drop</code></li><li>Drag &amp; drop file HTML ini</li><li>Klik link yang muncul</li><li>Chrome HP: menu &bull;&bull;&bull; &rarr; "Install app"</li></ol>')+igC('2','GitHub Pages','Permanen, gratis','var(--tx2)','var(--bg4)','','<ol><li>Buat repo di <code>github.com</code></li><li>Upload file, rename <code>index.html</code></li><li>Settings &rarr; Pages &rarr; Source: main</li><li>Buka URL di Chrome HP &rarr; Install</li></ol>')+'</div>'}
+function igC(n,t,d,c,bg,bdg,body){return'<div class="ig"><div class="ig-h" onclick="this.parentElement.querySelector(\'.ig-b\').classList.toggle(\'open\')"><div class="ig-n" style="background:'+bg+';color:'+c+'">'+n+'</div><div class="ig-i"><p>'+t+'</p><small>'+d+'</small></div>'+(bdg?'<span style="font-size:9px;font-weight:800;padding:3px 8px;border-radius:8px;background:'+bg+';color:'+c+';text-transform:uppercase">'+bdg+'</span>':'<span class="ic" style="color:var(--tx3);font-size:20px">chevron_right</span>')+'</div><div class="ig-b">'+body+'</div></div>'}
+function doInst(){if(!dI)return;dI.prompt();dI.userChoice.then(function(r){if(r.outcome==='accepted')toast('RideCheck terpasang!');dI=null;render()})}
 
-  /* ====== STORAGE ====== */
-  function ld(){try{var a=localStorage.getItem(SK);if(a)S=JSON.parse(a);var b=localStorage.getItem(CK);if(b)C=JSON.parse(b)}catch(e){}}
-  function sv(){try{localStorage.setItem(SK,JSON.stringify(S));localStorage.setItem(CK,JSON.stringify(C))}catch(e){}}
+function pVeh(){
+if(!S.v.length)return'<div class="pg-in"><div style="padding-top:8px;margin-bottom:16px"><h2 style="font-size:22px;font-weight:900">Kendaraan Saya</h2></div><div class="empty"><div class="empty-ic" style="background:var(--bg4)"><span class="ic ic-xxl" style="color:var(--tx3)">garage</span></div><h3>Belum Ada Kendaraan</h3><button class="bt bt-p" style="margin-top:24px" onclick="RC.openAddV()"><span class="ic ic-s">add</span>Tambah</button></div></div>';
+var h='<div class="pg-in"><div style="padding-top:8px;margin-bottom:14px"><h2 style="font-size:22px;font-weight:900">Kendaraan Saya</h2><p style="font-size:13px;color:var(--tx3);margin-top:4px">'+S.v.length+' kendaraan</p></div><div style="display:flex;flex-direction:column;gap:10px">';
+for(var i=0;i<S.v.length;i++){var v=S.v[i],ov=vS(v);h+='<div class="cd" style="cursor:pointer" onclick="RC.openVD(\''+v.id+'\')"><div class="cd-b" style="display:flex;gap:14px;align-items:center"><div class="thb">'+(v.photo?'<img src="'+v.photo+'">':'<span class="ic" style="font-size:26px;color:var(--pri)">'+(v.type==='motor'?'two_wheeler':'directions_car')+'</span>')+'</div><div style="flex:1;min-width:0"><div style="display:flex;align-items:center;gap:8px"><h3 style="font-size:14px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+v.name+'</h3><span class="dot '+DC[ov]+'"></span></div><p style="font-size:12px;color:var(--tx2);margin-top:2px">'+v.brand+' &bull; '+v.year+' &bull; '+fn(v.currentKm)+' km</p></div><span class="ic" style="font-size:20px;color:var(--tx3)">chevron_right</span></div></div>'}
+h+='</div></div>';return h}
 
-  /* ====== HELPERS ====== */
-  function uid(){return Date.now().toString(36)+Math.random().toString(36).substr(2,6)}
-  function fn(n){return n?n.toLocaleString('id-ID'):'0'}
-  function fd(d){return d?new Date(d).toLocaleDateString('id-ID',{day:'numeric',month:'short',year:'numeric'}):'-'}
-  function fm(n){return 'Rp '+fn(n)}
-  function dd(a,b){return Math.floor((b-a)/864e5)}
-  function sI(t){var s=SV;for(var i=0;i<s.length;i++)if(s[i].type===t)return s[i].icon;return'build'}
-  function sC(t){var s=SV;for(var i=0;i<s.length;i++)if(s[i].type===t)return s[i].color;return'#607888'}
-  function sL(t){var s=SV;for(var i=0;i<s.length;i++)if(s[i].type===t)return s[i].label;return t}
+function pSch(){
+var all=[];for(var i=0;i<S.v.length;i++){var v=S.v[i];if(!v.services)continue;for(var j=0;j<v.services.length;j++)all.push({v:v,s:v.services[j],c:calc(v,v.services[j])})}all.sort(function(a,b){return a.c.rd-b.c.rd});
+var er=[],wa=[],ok=[];for(var i=0;i<all.length;i++){if(all[i].c.lv==='e')er.push(all[i]);else if(all[i].c.lv==='w')wa.push(all[i]);else ok.push(all[i])}
+function grp(arr,label,color){if(!arr.length)return'';var h='<div class="sl"><span style="color:'+color+'">'+label+'</span><span style="font-size:11px;color:var(--tx3)">'+arr.length+'</span></div><div style="display:flex;flex-direction:column;gap:8px;margin-bottom:4px">';for(var i=0;i<arr.length;i++){var x=arr[i],cl=x.c.lv==='e'?'var(--err)':x.c.lv==='w'?'var(--wrn)':'var(--pri)';h+='<div class="cd" style="cursor:pointer" onclick="RC.openSD(\''+x.v.id+'\',\''+x.s.id+'\')"><div class="cd-b" style="padding:14px;display:flex;gap:12px;align-items:center"><div style="width:38px;height:38px;border-radius:10px;background:'+sC(x.s.type)+'15;display:flex;align-items:center;justify-content:center;flex-shrink:0"><span class="ic ic-s" style="color:'+sC(x.s.type)+'">'+sI(x.s.type)+'</span></div><div style="flex:1;min-width:0"><p style="font-size:13px;font-weight:700">'+x.s.label+'</p><p style="font-size:11px;color:var(--tx2)">'+x.v.name+'</p><div class="prg" style="margin-top:6px"><div class="prg-f" style="width:'+Math.min(x.c.p*100,100)+'%;background:'+cl+'"></div></div><div style="display:flex;justify-content:space-between;margin-top:4px"><span style="font-size:10px;color:var(--tx3)">'+(x.c.rk>0?fn(x.c.rk)+' km':'Overdue')+'</span><span style="font-size:10px;color:var(--tx3)">'+(x.c.rd>0?x.c.rd+' hari':'Overdue')+'</span></div></div><span class="dot '+DC[x.c.lv]+'"></span></div></div>'}h+='</div>';return h}
+return'<div class="pg-in"><div style="padding-top:8px;margin-bottom:14px"><h2 style="font-size:22px;font-weight:900">Jadwal Servis</h2><p style="font-size:13px;color:var(--tx3);margin-top:4px">'+er.length+' overdue, '+wa.length+' segera, '+ok.length+' aman</p></div>'+(all.length?'':'<div class="empty"><div class="empty-ic" style="background:var(--bg4)"><span class="ic ic-xxl" style="color:var(--tx3)">calendar_month</span></div><h3>Belum Ada Jadwal</h3></div>')+grp(er,'Harus Servis','var(--err)')+grp(wa,'Mendekati Servis','var(--wrn)')+grp(ok,'Aman','var(--pri)')+'</div>'}
 
-  /* ====== CALC ====== */
-  function calc(v,s){
-    var now=new Date(),last=s.lastDate?new Date(s.lastDate):now;
-    var days=dd(last,now),km=v.currentKm-s.lastKm;
-    var pk=s.intervalKm>0?km/s.intervalKm:0;
-    var pd=s.intervalDays>0?days/s.intervalDays:0;
-    var p=Math.max(pk,pd,0);
-    var lv='ok';if(p>=1)lv='e';else if(p>=.75)lv='w';
-    return{p:Math.min(p,1.2),lv,rk:Math.max(s.intervalKm-km,0),rd:Math.max(s.intervalDays-days,0)}
-  }
-  function vS(v){
-    if(!v.services||!v.services.length)return'ok';
-    var w='ok';var rank={ok:0,w:1,e:2};
-    for(var i=0;i<v.services.length;i++){var l=calc(v,v.services[i]).lv;if(rank[l]>rank[w])w=l}
-    return w
-  }
-  var LT={ok:'Aman',w:'Mendekati Servis',e:'Harus Servis'};
-  var LC={ok:'var(--pri)',w:'var(--wrn)',e:'var(--err)'};
-  var DC={ok:'dot-ok',w:'dot-w',e:'dot-e'};
+function pHis(){
+var all=[];for(var i=0;i<S.v.length;i++){var v=S.v[i];if(!v.history)continue;for(var j=0;j<v.history.length;j++)all.push({h:v.history[j],vn:v.name,vid:v.id})}all.sort(function(a,b){return new Date(b.h.date)-new Date(a.h.date)});var tot=0;for(var i=0;i<all.length;i++)tot+=(all[i].h.cost||0);
+var h='<div class="pg-in"><div style="padding-top:8px;margin-bottom:14px"><h2 style="font-size:22px;font-weight:900">Riwayat Servis</h2><p style="font-size:13px;color:var(--tx3);margin-top:4px">'+all.length+' catatan &bull; Total '+fm(tot)+'</p></div>';
+if(all.length){h+='<div style="display:flex;gap:6px;margin-bottom:12px;overflow-x:auto;padding-bottom:2px"><span class="chip on" onclick="RC.fH(\'all\',this)">Semua</span>';for(var i=0;i<SV.length;i++)h+='<span class="chip" onclick="RC.fH(\''+SV[i].type+'\',this)">'+SV[i].label.replace('Ganti ','').replace('Cek ','')+'</span>';h+='</div>'}
+h+='<div id="hl">';if(!all.length)h+='<div class="empty"><div class="empty-ic" style="background:var(--bg4)"><span class="ic ic-xxl" style="color:var(--tx3)">receipt_long</span></div><h3>Belum Ada Riwayat</h3></div>';
+else{h+='<div class="cd" style="padding:0">';for(var i=0;i<all.length;i++){var x=all[i];h+='<div class="hr" data-tp="'+x.h.serviceType+'"><div style="width:34px;height:34px;border-radius:8px;background:'+sC(x.h.serviceType)+'15;display:flex;align-items:center;justify-content:center;flex-shrink:0"><span class="ic" style="font-size:17px;color:'+sC(x.h.serviceType)+'">'+sI(x.h.serviceType)+'</span></div><div style="flex:1;min-width:0"><p style="font-size:13px;font-weight:600">'+(x.h.description||sL(x.h.serviceType))+'</p><p style="font-size:11px;color:var(--tx3)">'+x.vn+' &bull; '+fd(x.h.date)+(x.h.km?' &bull; '+fn(x.h.km)+' km':'')+'</p></div><div style="text-align:right"><span style="font-size:12px;font-weight:700;color:var(--pri);display:block">'+(x.h.cost?fm(x.h.cost):'-')+'</span><button onclick="event.stopPropagation();RC.dH(\''+x.vid+'\',\''+x.h.id+'\')" style="background:none;border:none;cursor:pointer;padding:2px"><span class="ic" style="font-size:15px;color:var(--err)">delete</span></button></div></div>'}h+='</div>'}h+='</div></div>';return h}
+function fH(t,el){var chips=document.querySelectorAll('.chip');for(var i=0;i<chips.length;i++)chips[i].classList.toggle('on',chips[i]===el);var rows=document.querySelectorAll('.hr');for(var i=0;i<rows.length;i++)rows[i].style.display=(t==='all'||rows[i].getAttribute('data-tp')===t)?'flex':'none'}
+function dH(vid,hid){var v=findV(vid);if(!v||!v.history)return;v.history=v.history.filter(function(h){return h.id!==hid});sv();toast('Riwayat dihapus','warn');go('his')}
 
-  /* ====== ALERTS ====== */
-  function gA(){
-    var list=[];
-    for(var i=0;i<S.v.length;i++){
-      var v=S.v[i];
-      if(!v.services)continue;
-      for(var j=0;j<v.services.length;j++){
-        var s=v.services[j],c=calc(v,s);
-        if(c.lv==='e')list.push({v:v,s:s,c:c,lv:'e',m:v.name+': '+s.label+' melewati jadwal!'});
-        else if(c.rd<=C.rd||c.rk<=C.rk)list.push({v:v,s:s,c:c,lv:'w',m:v.name+': '+s.label+(c.rd>0?' '+c.rd+' hari':c.rk+' km')+' lagi'});
-      }
-    }
-    list.sort(function(a,b){return(a.lv==='e'?0:1)-(b.lv==='e'?0:1)});
-    return list
-  }
-  function uBg(){
-    var n=gA(),el=document.getElementById('hbg');
-    if(n.length>0){el.classList.add('vis');el.textContent=n.length>9?'9+':n.length}
-    else el.classList.remove('vis')
-  }
-  function rNL(){
-    var n=gA(),el=document.getElementById('nl');
-    if(!n.length){el.innerHTML='<div style="text-align:center;padding:40px;color:var(--tx3)"><span class="ic ic-xl" style="display:block;margin-bottom:12px;color:var(--bdr)">notifications_off</span><p style="font-size:13px">Tidak ada notifikasi</p></div>';return}
-    var h='';
-    for(var i=0;i<n.length;i++){
-      var x=n[i],bg=x.lv==='e'?'var(--err-bg)':'var(--wrn-bg)';
-      h+='<div style="display:flex;gap:10px;padding:12px;border-radius:12px;margin-bottom:6px;background:'+bg+'"><span class="ic ic-s" style="color:'+(x.lv==='e'?'var(--err)':'var(--wrn)')+'">'+(x.lv==='e'?'error':'warning')+'</span><div><p style="font-size:12px;font-weight:600;line-height:1.5">'+x.m+'</p></div></div>'
-    }
-    el.innerHTML=h
-  }
+function findV(id){for(var i=0;i<S.v.length;i++)if(S.v[i].id===id)return S.v[i];return null}
+function findS(v,id){if(!v.services)return null;for(var i=0;i<v.services.length;i++)if(v.services[i].id===id)return v.services[i];return null}
+function $(id){return document.getElementById(id)}
 
-  /* ====== UI ====== */
-  function toast(msg,type){
-    var el=document.getElementById('sb'),inner=document.getElementById('sbi'),txt=document.getElementById('sbt');
-    var icons={ok:'check_circle',err:'error',warn:'warning'};
-    if(!type)type='ok';
-    var colors={ok:'color:var(--pri)',err:'color:var(--err)',warn:'color:var(--wrn)'};
-    inner.querySelector('.ic').textContent=icons[type];
-    inner.querySelector('.ic').setAttribute('style',icons[type]?'font-size:20px;'+colors[type]:'');
-    txt.textContent=msg;
-    el.classList.add('vis');
-    clearTimeout(el._t);el._t=setTimeout(function(){el.classList.remove('vis')},3000)
-  }
-  function toggleFab(){
-    fO=!fO;
-    document.getElementById('fb').classList.toggle('open',fO);
-    document.getElementById('fm').classList.toggle('open',fO)
-  }
-  function closeFab(){
-    fO=false;
-    document.getElementById('fb').classList.remove('open');
-    document.getElementById('fm').classList.remove('open')
-  }
+function openAddV(){closeFab();uP='';
+openSheet('<div class="ss-hd"><h2>Tambah Kendaraan</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc">'+
+'<div class="pu" id="phU" onclick="$(\'phI\').click()"><span class="ic ic-l" style="color:var(--tx3)">add_a_photo</span><span style="font-size:12px;color:var(--tx3)">Foto Kendaraan</span></div>'+
+'<input type="file" id="phI" accept="image/*" style="display:none" onchange="RC.hPH(event)">'+
+'<div class="fld"><label class="fld-l">Nama Kendaraan</label>'+inp('text','vN',undefined,undefined,'cth: Vario 160 Hitam')+'</div>'+
+'<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="fld"><label class="fld-l">Jenis</label>'+sel('vT',[{v:'motor',t:'Motor'},{v:'mobil',t:'Mobil'}])+'</div><div class="fld"><label class="fld-l">Merek</label>'+sel('vB',[])+'</div></div>'+
+'<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="fld"><label class="fld-l">Tipe</label>'+inp('text','vM',undefined,undefined,'cth: Vario 160')+'</div><div class="fld"><label class="fld-l">Tahun</label>'+inp('number','vY',undefined,'1990','2025','2024')+'</div></div>'+
+'<div class="fld"><label class="fld-l">Kilometer Saat Ini</label>'+inp('number','vK',undefined,'0',undefined,'15000')+'</div>'+
+'<button class="bt bt-p bt-f" onclick="RC.svV()">Simpan Kendaraan</button></div>');
+uBr();$('vT').setAttribute('onchange','RC.uBr()')}
+function hPH(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(ev){var img=new Image();img.onload=function(){var cv=document.createElement('canvas'),mx=400,rt=Math.min(mx/img.width,mx/img.height);cv.width=img.width*rt;cv.height=img.height*rt;cv.getContext('2d').drawImage(img,0,0,cv.width,cv.height);uP=cv.toDataURL('image/jpeg',.55);$('phU').innerHTML='<img src="'+uP+'">'};img.src=ev.target.result};r.readAsDataURL(f)}
+function uBr(sel){var t=$('vT').value,brands=t==='motor'?BM:BC;var h='';for(var i=0;i<brands.length;i++)h+='<option value="'+brands[i]+'"'+(brands[i]===sel?' selected':'')+'>'+brands[i]+'</option>';$('vB').innerHTML=h}
+function svV(){var n=$('vN').value.trim();if(!n){toast('Nama wajib diisi','err');return}var t=$('vT').value,b=$('vB').value,m=$('vM').value.trim(),y=parseInt($('vY').value)||new Date().getFullYear(),k=parseInt($('vK').value)||0,now=new Date().toISOString(),svcs=[];for(var i=0;i<SV.length;i++){var s=SV[i];svcs.push({id:uid(),type:s.type,label:s.label,icon:s.icon,color:s.color,lastKm:k,lastDate:now,intervalKm:s.ki,intervalDays:s.di})}S.v.push({id:uid(),name:n,type:t,brand:b,model:m,year:y,currentKm:k,photo:uP,services:svcs,history:[],createdAt:now});S.sel=S.v[S.v.length-1].id;uP='';sv();closeSheet();toast(n+' ditambahkan');render()}
 
-  function openSheet(html){
-    document.getElementById('ssc').innerHTML=html;
-    document.getElementById('so').classList.add('open');
-    document.body.style.overflow='hidden'
-  }
-  function closeSheet(){
-    document.getElementById('so').classList.remove('open');
-    document.body.style.overflow=''
-  }
+function openEV(id){var v=findV(id);if(!v)return;uP=v.photo||'';closeSheet();setTimeout(function(){
+openSheet('<div class="ss-hd"><h2>Edit Kendaraan</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc">'+
+'<div class="pu" id="phU" onclick="$(\'phI\').click()">'+(uP?'<img src="'+uP+'">':'<span class="ic ic-l" style="color:var(--tx3)">add_a_photo</span><span style="font-size:12px;color:var(--tx3)">Foto</span>')+'</div>'+
+'<input type="file" id="phI" accept="image/*" style="display:none" onchange="RC.hPH(event)">'+
+'<div class="fld"><label class="fld-l">Nama</label>'+inp('text','vN',v.name)+'</div>'+
+'<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="fld"><label class="fld-l">Jenis</label>'+sel('vT',[{v:'motor',t:'Motor',s:v.type==='motor'},{v:'mobil',t:'Mobil',s:v.type==='mobil'}])+'</div><div class="fld"><label class="fld-l">Merek</label>'+sel('vB',[])+'</div></div>'+
+'<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="fld"><label class="fld-l">Tipe</label>'+inp('text','vM',v.model||'')+'</div><div class="fld"><label class="fld-l">Tahun</label>'+inp('number','vY',v.year)+'</div></div>'+
+'<div class="fld"><label class="fld-l">Kilometer</label>'+inp('number','vK',v.currentKm)+'</div>'+
+'<button class="bt bt-p bt-f" onclick="RC.uV(\''+v.id+'\')">Simpan</button>'+
+'<button class="bt bt-d bt-f" style="margin-top:8px" onclick="RC.cfDel(\''+v.id+'\')"><span class="ic ic-s">delete_forever</span>Hapus Kendaraan</button></div>');
+uBr(v.brand);$('vT').setAttribute('onchange','RC.uBr(\''+v.brand+'\')')},150)}
+function uV(id){var v=findV(id);if(!v)return;var n=$('vN').value.trim();if(!n){toast('Nama wajib','err');return}v.name=n;v.type=$('vT').value;v.brand=$('vB').value;v.model=$('vM').value.trim();v.year=parseInt($('vY').value)||v.year;v.currentKm=parseInt($('vK').value)||v.currentKm;if(uP!==v.photo)v.photo=uP;uP='';sv();closeSheet();toast('Diperbarui');render()}
+function cfDel(id){var v=findV(id);if(!v)return;openSheet('<div class="ss-hd"><h2>Hapus</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc" style="text-align:center"><span class="ic ic-xxl" style="color:var(--err);display:block;margin-bottom:12px">delete_forever</span><p style="font-size:15px;font-weight:700;margin-bottom:6px">Hapus '+v.name+'?</p><p style="font-size:13px;color:var(--tx3);margin-bottom:24px">Data hilang permanen.</p><div style="display:flex;gap:12px"><button class="bt bt-s" style="flex:1" onclick="RC.openEV(\''+id+'\')">Batal</button><button class="bt bt-d" style="flex:1" onclick="RC.dV(\''+id+'\')">Hapus</button></div></div>')}
+function dV(id){S.v=S.v.filter(function(x){return x.id!==id});if(S.sel===id)S.sel=S.v.length?S.v[0].id:null;sv();closeSheet();toast('Dihapus','warn');render()}
 
-  function toggleNotif(){
-    var p=document.getElementById('np'),b=document.getElementById('nb'),o=p.classList.contains('open');
-    if(o){p.classList.remove('open');b.classList.remove('open')}
-    else{rNL();p.classList.add('open');b.classList.add('open')}
-  }
+function openVD(id){var v=findV(id);if(!v)return;var ov=vS(v);openSheet('<div class="ss-hd"><h2>'+v.name+'</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc">'+(v.photo?'<img src="'+v.photo+'" style="width:100%;height:160px;object-fit:cover;border-radius:14px;margin-bottom:16px">':'')+'<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px"><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><p style="font-size:10px;color:var(--tx3)">MEREK</p><p style="font-size:14px;font-weight:700;margin-top:2px">'+v.brand+'</p></div></div><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><p style="font-size:10px;color:var(--tx3)">TIPE</p><p style="font-size:14px;font-weight:700;margin-top:2px">'+(v.model||'-')+'</p></div></div><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><p style="font-size:10px;color:var(--tx3)">TAHUN</p><p style="font-size:14px;font-weight:700;margin-top:2px">'+v.year+'</p></div></div><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><p style="font-size:10px;color:var(--tx3)">KM</p><p style="font-size:14px;font-weight:700;margin-top:2px">'+fn(v.currentKm)+'</p></div></div></div><div style="display:flex;align-items:center;gap:8px;padding:12px 14px;background:'+(ov==='ok'?'var(--pri-bg)':ov==='w'?'var(--wrn-bg)':'var(--err-bg)')+';border-radius:12px;margin-bottom:20px"><span class="dot '+DC[ov]+'" style="width:14px;height:14px"></span><span style="font-size:14px;font-weight:700;color:'+LC[ov]+'">'+LT[ov]+'</span></div><div style="display:flex;gap:10px"><button class="bt bt-p" style="flex:1" onclick="RC.closeSheet();RC.openEV(\''+v.id+'\')"><span class="ic ic-s">edit</span>Edit</button><button class="bt bt-s" style="flex:1" onclick="RC.closeSheet();RC.selV(\''+v.id+'\');RC.go(\'home\')"><span class="ic ic-s">space_dashboard</span>Dashboard</button></div></div>')}
 
-  /* ====== NAV ====== */
-  function go(pg){
-    closeFab();S.pg=pg;sv();
-    var btns=document.querySelectorAll('.bnav-b');
-    for(var i=0;i<btns.length;i++)btns[i].classList.toggle('on',btns[i].getAttribute('data-p')===pg);
-    render();uBg();
-    document.getElementById('scr').scrollTop=0
-  }
-  function render(){
-    var el=document.getElementById('pg');
-    if(S.pg==='home')el.innerHTML=pHome();
-    else if(S.pg==='veh')el.innerHTML=pVeh();
-    else if(S.pg==='sch')el.innerHTML=pSch();
-    else if(S.pg==='his')el.innerHTML=pHis()
-  }
-  function gSel(){
-    if(S.sel){for(var i=0;i<S.v.length;i++)if(S.v[i].id===S.sel)return S.v[i]}
-    return S.v[0]||null
-  }
-  function selV(id){S.sel=id;sv();render()}
+function openUKm(id){var v=findV(id);if(!v)return;openSheet('<div class="ss-hd"><h2>Update Kilometer</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc"><p style="font-size:13px;color:var(--tx2);margin-bottom:4px">'+v.name+'</p><p style="font-size:12px;color:var(--tx3);margin-bottom:16px">KM saat ini: '+fn(v.currentKm)+'</p><div class="fld"><label class="fld-l">KM Baru</label>'+inp('number','nkm',v.currentKm,v.currentKm)+'</div><button class="bt bt-p bt-f" onclick="RC.dUKm(\''+v.id+'\')">Update</button></div>')}
+function dUKm(id){var v=findV(id);if(!v)return;var n=parseInt($('nkm').value);if(isNaN(n)||n<v.currentKm){toast('KM harus lebih besar','err');return}v.currentKm=n;sv();closeSheet();toast('KM → '+fn(n));render()}
 
-  /* ====== PAGE: HOME ====== */
-  function pHome(){
-    if(!S.v.length){
-      return '<div class="pg-in"><div class="empty" style="padding-top:48px"><div class="empty-ic" style="background:var(--pri-bg);border:2px solid var(--pri-bdr)"><span class="ic ic-xxl" style="color:var(--pri)">directions_car</span></div><h3>Selamat Datang</h3><p>Tambahkan kendaraan pertama untuk mulai memantau jadwal servis.</p><button class="bt bt-p" style="margin-top:24px" onclick="RC.openAddV()"><span class="ic ic-s">add</span>Tambah Kendaraan</button></div>'+igB()+'</div>'
-    }
-    var v=gSel();if(!v)return pHome();
-    var ov=vS(v),items=[];
-    if(v.services)for(var i=0;i<v.services.length;i++){var s=v.services[i];items.push({s:s,c:calc(v,s)})}
-    items.sort(function(a,b){return b.c.p-a.c.p});
-    var up=items.filter(function(x){return x.c.lv!=='ok'}).sort(function(a,b){return a.c.rd-b.c.rd});
+function openSD(vid,sid){var v=findV(vid);if(!v)return;var s=findS(v,sid);if(!s)return;var c=calc(v,s),cl=c.lv==='e'?'var(--err)':c.lv==='w'?'var(--wrn)':'var(--pri)';openSheet('<div class="ss-hd"><h2>'+s.label+'</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc"><p style="font-size:13px;color:var(--tx2);margin-bottom:16px">'+v.name+' &bull; '+v.brand+'</p><div style="display:flex;align-items:center;gap:10px;padding:14px;background:'+(c.lv==='ok'?'var(--pri-bg)':c.lv==='w'?'var(--wrn-bg)':'var(--err-bg)')+';border-radius:12px;margin-bottom:16px"><span class="dot '+DC[c.lv]+'" style="width:14px;height:14px"></span><div><p style="font-size:15px;font-weight:800;color:'+LC[c.lv]+'">'+LT[c.lv]+'</p><p style="font-size:11px;color:var(--tx3);margin-top:2px">'+Math.round(c.p*100)+'% menuju jadwal</p></div></div><div class="prg" style="height:10px;border-radius:5px;margin-bottom:16px"><div class="prg-f" style="width:'+Math.min(c.p*100,100)+'%;background:'+cl+';border-radius:5px"></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px"><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><span class="ic" style="font-size:20px;color:var(--pri);display:block;margin-bottom:4px">speed</span><p style="font-size:10px;color:var(--tx3)">KM Tersisa</p><p style="font-size:16px;font-weight:800;margin-top:2px">'+fn(c.rk)+'</p></div></div><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><span class="ic" style="font-size:20px;color:var(--pri);display:block;margin-bottom:4px">event</span><p style="font-size:10px;color:var(--tx3)">Hari Tersisa</p><p style="font-size:16px;font-weight:800;margin-top:2px">'+c.rd+'</p></div></div><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><p style="font-size:10px;color:var(--tx3)">INT. KM</p><p style="font-size:14px;font-weight:700;margin-top:2px">'+fn(s.intervalKm)+'</p></div></div><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><p style="font-size:10px;color:var(--tx3)">INT. HARI</p><p style="font-size:14px;font-weight:700;margin-top:2px">'+s.intervalDays+'</p></div></div></div><div style="display:flex;gap:10px"><button class="bt bt-p" style="flex:1" onclick="RC.closeSheet();RC.oRS(\''+vid+'\',\''+sid+'\')"><span class="ic ic-s">build</span>Catat Servis</button><button class="bt bt-s" style="flex:1" onclick="RC.closeSheet();RC.oEI(\''+vid+'\',\''+sid+'\')"><span class="ic ic-s">tune</span>Atur Interval</button></div></div>')}
 
-    var h='<div class="pg-in">';
-    /* Hero card */
-    h+='<div class="cd" style="margin-top:4px;border-color:var(--pri-bdr);box-shadow:0 0 20px var(--pri-bg)"><div class="cd-b"><div style="display:flex;gap:14px;align-items:center"><div class="thb" style="width:60px;height:60px;border-radius:16px">'+(v.photo?'<img src="'+v.photo+'">':'<span class="ic ic-l" style="color:var(--pri)">'+(v.type==='motor'?'two_wheeler':'directions_car')+'</span>')+'</div><div style="flex:1;min-width:0"><h2 style="font-size:16px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+v.name+'</h2><p style="font-size:12px;color:var(--tx2);margin-top:2px">'+v.brand+(v.type==='motor'?' Motor':' Mobil')+' &bull; '+v.year+'</p><div style="display:flex;align-items:center;gap:6px;margin-top:6px"><span class="dot '+DC[ov]+'"></span><span style="font-size:11px;font-weight:700;color:'+LC[ov]+'">'+LT[ov]+'</span></div></div>';
-    if(S.v.length>1)h+='<button onclick="RC.cyV()" class="bt bt-sm bt-s" style="padding:6px 10px"><span class="ic ic-s">swap_horiz</span></button>';
-    h+='</div><div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--bdr);display:flex;align-items:baseline;gap:4px"><span class="km-n">'+fn(v.currentKm)+'<small>km</small></span><button onclick="RC.openUKm(\''+v.id+'\')" class="bt bt-sm bt-s" style="margin-left:auto;padding:5px 12px;color:var(--pri);border-color:var(--pri-bdr)">Update KM</button></div></div></div>';
+function openAddSR(){closeFab();if(!S.v.length){toast('Tambahkan kendaraan dulu','warn');return}
+var h='<div class="ss-hd"><h2>Catat Servis</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc">';
+h+='<div class="fld"><label class="fld-l">Kendaraan</label>'+sel('srV',function(){var o=[];for(var i=0;i<S.v.length;i++)o.push({v:S.v[i].id,t:S.v[i].name+' ('+S.v[i].brand+')'});return o}())+'</div>';
+h+='<div class="fld"><label class="fld-l">Jenis</label>'+sel('srT',function(){var o=[];for(var i=0;i<SV.length;i++)o.push({v:SV[i].type,t:SV[i].label});o.push({v:'other',t:'Lainnya'});return o}())+'</div>';
+h+='<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="fld"><label class="fld-l">Tanggal</label>'+inp('date','srDt',new Date().toISOString().split('T')[0])+'</div><div class="fld"><label class="fld-l">KM</label>'+inp('number','srKm',undefined,'0',undefined,'15000')+'</div></div>';
+h+='<div class="fld"><label class="fld-l">Biaya (Rp)</label>'+inp('number','srC',undefined,'0',undefined,'0')+'</div>';
+h+='<button class="bt bt-p bt-f" onclick="RC.sSR()">Simpan</button></div>';openSheet(h);
+ $('srT').setAttribute('onchange','$(\'dG\').style.display=this.value===\'other\'?\'block\':\'none\'');
+h='<div class="fld" id="dG" style="display:none"><label class="fld-l">Deskripsi</label>'+inp('text','srD',undefined,undefined,'Deskripsi')+'</div>';
+var dgel=document.createElement('div');dgel.innerHTML=h;$('srT').parentNode.parentNode.insertBefore(dgel.firstElementChild,$('srT').parentNode.parentNode.querySelector('.bt').parentNode)}
 
-    /* Vehicle tabs */
-    if(S.v.length>1){
-      h+='<div style="display:flex;gap:6px;margin-top:10px;overflow-x:auto;padding-bottom:2px">';
-      for(var i=0;i<S.v.length;i++){
-        var vv=S.v[i],sel=vv.id===v.id;
-        h+='<div onclick="RC.selV(\''+vv.id+'\')" style="display:flex;align-items:center;gap:6px;padding:7px 12px;border-radius:20px;cursor:pointer;white-space:nowrap;border:1px solid '+(sel?'var(--pri)':'var(--bdr)')+';background:'+(sel?'var(--pri-bg)':'var(--bg3)')+'"><span class="dot '+DC[vS(vv)]+'" style="width:8px;height:8px"></span><span style="font-size:11px;font-weight:600;color:'+(sel?'var(--pri)':'var(--tx2)')+'">'+vv.name+'</span></div>'
-      }
-      h+='</div>'
-    }
+function oRS(vid,sid){var v=findV(vid);if(!v)return;var s=findS(v,sid);if(!s)return;openSheet('<div class="ss-hd"><h2>Catat '+s.label+'</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc"><p style="font-size:13px;color:var(--tx2);margin-bottom:14px">'+v.name+' &bull; KM terakhir: '+fn(s.lastKm)+'</p><div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="fld"><label class="fld-l">Tanggal</label>'+inp('date','srDt',new Date().toISOString().split('T')[0])+'</div><div class="fld"><label class="fld-l">KM</label>'+inp('number','srKm',v.currentKm,s.lastKm)+'</div></div><div class="fld"><label class="fld-l">Biaya (Rp)</label>'+inp('number','srC',undefined,'0',undefined,'0')+'</div><div class="fld"><label class="fld-l">Catatan</label><textarea class="fld-t" id="srN" placeholder="Opsional..." autocomplete="off"></textarea></div><button class="bt bt-p bt-f" onclick="RC.dRS(\''+vid+'\',\''+sid+'\')">Simpan & Reset Jadwal</button></div>')}
+function dRS(vid,sid){var v=findV(vid);if(!v)return;var s=findS(v,sid);if(!s)return;var dt=$('srDt').value,km=parseInt($('srKm').value),cost=parseInt($('srC').value)||0,note=$('srN')?$('srN').value.trim():'';if(!dt){toast('Tanggal wajib','err');return}if(isNaN(km)||km<s.lastKm){toast('KM harus lebih besar dari terakhir','err');return}if(!v.history)v.history=[];v.history.push({id:uid(),date:dt,serviceType:s.type,description:note||s.label,cost:cost,km:km});s.lastKm=km;s.lastDate=new Date(dt).toISOString();if(km>v.currentKm)v.currentKm=km;sv();closeSheet();toast(s.label+' dicatat');render()}
+function sSR(){var vid=$('srV').value,type=$('srT').value,dt=$('srDt').value,km=parseInt($('srKm').value)||0,cost=parseInt($('srC').value)||0,desc=type==='other'&&$('srD')?$('srD').value.trim():'';if(!dt){toast('Tanggal wajib','err');return}var v=findV(vid);if(!v)return;if(!v.history)v.history=[];v.history.push({id:uid(),date:dt,serviceType:type,description:desc||sL(type),cost:cost,km:km||undefined});var svc=findS(v,type);if(svc&&km>0){svc.lastKm=km;svc.lastDate=new Date(dt).toISOString();if(km>v.currentKm)v.currentKm=km}else if(svc)svc.lastDate=new Date(dt).toISOString();sv();closeSheet();toast('Disimpan');render()}
 
-    /* Service items */
-    h+='<div class="sl"><span>Status Servis</span><span style="font-size:11px;color:var(--tx3)">'+items.length+' item</span></div><div style="display:flex;flex-direction:column;gap:8px">';
-    for(var i=0;i<items.length;i++){
-      var it=items[i],cl=it.c.lv==='e'?'var(--err)':it.c.lv==='w'?'var(--wrn)':'var(--pri)';
-      h+='<div class="cd" style="cursor:pointer" onclick="RC.openSD(\''+v.id+'\',\''+it.s.id+'\')"><div class="cd-b" style="padding:14px;display:flex;align-items:center;gap:12px"><div style="width:38px;height:38px;border-radius:10px;background:'+sC(it.s.type)+'15;display:flex;align-items:center;justify-content:center;flex-shrink:0"><span class="ic ic-s" style="color:'+sC(it.s.type)+'">'+sI(it.s.type)+'</span></div><div style="flex:1;min-width:0"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px"><span style="font-size:13px;font-weight:700">'+it.s.label+'</span><span class="dot '+DC[it.c.lv]+'"></span></div><div class="prg"><div class="prg-f" style="width:'+Math.min(it.c.p*100,100)+'%;background:'+cl+'"></div></div><div style="display:flex;justify-content:space-between;margin-top:4px"><span style="font-size:10px;color:var(--tx3)">'+(it.c.rk>0?fn(it.c.rk)+' km tersisa':'Jatuh tempo')+'</span><span style="font-size:10px;color:var(--tx3)">'+(it.c.rd>0?it.c.rd+' hari':'Jatuh tempo')+'</span></div></div></div></div>'
-    }
-    h+='</div>';
+function oEI(vid,sid){var v=findV(vid);if(!v)return;var s=findS(v,sid);if(!s)return;openSheet('<div class="ss-hd"><h2>Atur Interval</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc"><p style="font-size:14px;font-weight:700;margin-bottom:4px">'+s.label+'</p><p style="font-size:12px;color:var(--tx3);margin-bottom:16px">'+v.name+'</p><div class="fld"><label class="fld-l">Interval KM</label>'+inp('number','eIK',s.intervalKm,'0')+'</div><div class="fld"><label class="fld-l">Interval Hari</label>'+inp('number','eID',s.intervalDays,'0')+'</div><div class="fld"><label class="fld-l">KM Terakhir</label>'+inp('number','eLK',s.lastKm,'0')+'</div><div class="fld"><label class="fld-l">Tanggal Terakhir</label>'+inp('date','eLD',s.lastDate?new Date(s.lastDate).toISOString().split('T')[0]:'')+'</div><button class="bt bt-p bt-f" onclick="RC.sI(\''+vid+'\',\''+sid+'\')">Simpan</button></div>')}
+function sI(vid,sid){var v=findV(vid);if(!v)return;var s=findS(v,sid);if(!s)return;var ik=parseInt($('eIK').value)||0,id=parseInt($('eID').value)||0,lk=parseInt($('eLK').value)||0,ld=$('eLD').value;if(!ik&&!id){toast('Isi minimal satu interval','err');return}s.intervalKm=ik;s.intervalDays=id;s.lastKm=lk;if(ld)s.lastDate=new Date(ld).toISOString();sv();closeSheet();toast('Interval diperbarui');render()}
 
-    /* Upcoming */
-    if(up.length){
-      h+='<div class="sl">Servis Mendatang</div><div class="cd" style="padding:0">';
-      for(var i=0;i<up.length;i++){
-        var u=up[i];
-        h+='<div style="display:flex;align-items:center;gap:12px;padding:11px 16px"><span class="ic ic-s" style="color:'+sC(u.s.type)+'">'+sI(u.s.type)+'</span><div style="flex:1"><p style="font-size:13px;font-weight:600">'+u.s.label+'</p><p style="font-size:11px;color:var(--tx3)">'+(u.c.rd>0?u.c.rd+' hari / '+fn(u.c.rk)+' km':'Segera!')+'</p></div><span class="dot '+DC[u.c.lv]+'"></span></div>'
-      }
-      h+='</div>'
-    }
+function openSettings(){openSheet('<div class="ss-hd"><h2>Pengaturan</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc"><p style="font-size:11px;font-weight:700;color:var(--tx2);margin-bottom:12px;text-transform:uppercase;letter-spacing:.6px">Pengingat</p><div style="display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--bdr)"><div><p style="font-size:14px;font-weight:600">Notifikasi Browser</p><p style="font-size:11px;color:var(--tx3)">Notifikasi servis</p></div><div class="tgl'+(C.nf?' on':'')+'" onclick="RC.tCf(\'nf\',this)"></div></div><div class="fld" style="margin-top:14px"><label class="fld-l">Pengingat sebelum servis (hari)</label>'+inp('number','srd',C.rd,'1','30')+'</div><div class="fld"><label class="fld-l">Pengingat sebelum servis (km)</label>'+inp('number','srk',C.rk,'0')+'</div><p style="font-size:11px;font-weight:700;color:var(--tx2);margin:20px 0 12px;text-transform:uppercase;letter-spacing:.6px">Data</p><button class="bt bt-s bt-f" style="margin-bottom:8px" onclick="RC.expD()"><span class="ic ic-s">download</span>Export JSON</button><button class="bt bt-s bt-f" style="margin-bottom:8px" onclick="$(\'impF\').click()"><span class="ic ic-s">upload</span>Import Data</button><input type="file" id="impF" accept=".json" style="display:none" onchange="RC.impD(event)"><button class="bt bt-d bt-f" onclick="RC.clrA()"><span class="ic ic-s">delete_forever</span>Hapus Semua Data</button><div style="text-align:center;margin-top:28px;padding-top:16px;border-top:1px solid var(--bdr)"><p style="font-size:16px;font-weight:900;color:var(--pri)">RideCheck</p><p style="font-size:11px;color:var(--tx3);margin-top:4px">v6.0.0</p></div></div>');
+ $('srd').setAttribute('onchange','C.rd=parseInt(this.value)||7;sv()');$('srk').setAttribute('onchange','C.rk=parseInt(this.value)||500;sv()');
+if(C.nf&&'Notification'in window&&Notification.permission==='default')Notification.requestPermission()}
+function tCf(k,el){C[k]=!C[k];el.classList.toggle('on',C[k]);sv();if(k==='nf'&&C.nf&&'Notification'in window)Notification.requestPermission()}
+function expD(){var d=JSON.stringify({vehicles:S.v,settings:C},null,2),b=new Blob([d],{type:'application/json'}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download='ridecheck_'+new Date().toISOString().split('T')[0]+'.json';a.click();URL.revokeObjectURL(u);toast('Data diexport')}
+function impD(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(ev){try{var d=JSON.parse(ev.target.result);if(d.vehicles){S.v=d.vehicles;S.sel=S.v.length?S.v[0].id:null}if(d.settings)for(var k in d.settings)C[k]=d.settings[k];sv();closeSheet();toast('Data diimport');render()}catch(err){toast('File tidak valid','err')}};r.readAsText(f);e.target.value=''}
+function clrA(){openSheet('<div class="ss-hd"><h2>Hapus Semua</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc" style="text-align:center"><span class="ic ic-xxl" style="color:var(--err);display:block;margin-bottom:12px">warning</span><p style="font-size:15px;font-weight:700;margin-bottom:6px">Hapus semua data?</p><p style="font-size:13px;color:var(--tx3);margin-bottom:24px">Tidak bisa dibatalkan.</p><div style="display:flex;gap:12px"><button class="bt bt-s" style="flex:1" onclick="RC.openSettings()">Batal</button><button class="bt bt-d" style="flex:1" onclick="RC.dCl()">Hapus</button></div></div>')}
+function dCl(){S={v:[],sel:null,pg:'home'};C={rd:7,rk:500,nf:true};sv();closeSheet();toast('Semua data dihapus','warn');render()}
 
-    /* History preview */
-    h+='<div class="sl"><span>Riwayat Terakhir</span><button onclick="RC.go(\'his\')" style="background:none;border:none;cursor:pointer;font-size:12px;color:var(--pri);font-weight:600;font-family:inherit">Lihat Semua</button></div><div class="cd" style="padding:0">';
-    if(!v.history||!v.history.length){h+='<p style="font-size:13px;color:var(--tx3);text-align:center;padding:20px">Belum ada riwayat</p>'}
-    else{var show=v.history.slice(-3).reverse();for(var i=0;i<show.length;i++){var hi=show[i];h+='<div class="hr"><div style="width:34px;height:34px;border-radius:8px;background:'+sC(hi.serviceType)+'15;display:flex;align-items:center;justify-content:center;flex-shrink:0"><span class="ic" style="font-size:17px;color:'+sC(hi.serviceType)+'">'+sI(hi.serviceType)+'</span></div><div style="flex:1;min-width:0"><p style="font-size:13px;font-weight:600">'+(hi.description||sL(hi.serviceType))+'</p><p style="font-size:11px;color:var(--tx3)">'+fd(hi.date)+(hi.km?' &bull; '+fn(hi.km)+' km':'')+'</p></div><span style="font-size:12px;font-weight:700;color:var(--pri)">'+(hi.cost?fm(hi.cost):'-')+'</span></div>'}}
-    h+='</div></div>';
-    return h
-  }
+function setupPWA(){if(isFl)return;try{var m={name:'RideCheck',short_name:'RideCheck',start_url:location.href,display:'standalone',orientation:'portrait',background_color:'#0b1420',theme_color:'#0b1420',icons:[{src:'data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><rect width="192" height="192" rx="40" fill="#0b1420"/><rect x="10" y="10" width="172" height="172" rx="32" fill="#142236"/><text x="96" y="78" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="900" fill="#00e0a0">Ride</text><text x="96" y="128" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="900" fill="#6cffcb">Check</text></svg>'),sizes:'192x192',type:'image/svg+xml',purpose:'any maskable'}]};var l=document.createElement('link');l.rel='manifest';l.href=URL.createObjectURL(new Blob([JSON.stringify(m)],{type:'application/json'}));document.head.appendChild(l)}catch(e){}}
+window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dI=e;render()});
+window.addEventListener('popstate',function(){if($('np').classList.contains('open')){toggleNotif();history.pushState(null,'');return}if($('so').classList.contains('open')){closeSheet();history.pushState(null,'');return}if(fO){closeFab();history.pushState(null,'')}});
 
-  function cyV(){var i=0;for(;i<S.v.length;i++)if(S.v[i].id===S.sel)break;selV(S.v[(i+1)%S.v.length].id)}
+function addDemo(){var now=new Date().toISOString();function mkSv(offs){var a=[];for(var i=0;i<SV.length;i++)a.push({id:uid(),type:SV[i].type,label:SV[i].label,icon:SV[i].icon,color:SV[i].color,lastKm:SV[i].type==='oil'?10000:SV[i].type==='filter'?5000:0,lastDate:new Date(Date.now()-(offs[i]||0)*864e5).toISOString(),intervalKm:SV[i].ki,intervalDays:SV[i].di});return a}S.v=[{id:uid(),name:'Vario 160 Hitam',type:'motor',brand:'Honda',model:'Vario 160',year:2023,currentKm:14500,photo:'',services:mkSv({oil:60,filter:200,brake:120,battery:300}),history:[{id:uid(),date:new Date(Date.now()-60*864e5).toISOString().split('T')[0],serviceType:'oil',description:'Ganti Oli - Yamalube',cost:85000,km:10000},{id:uid(),date:new Date(Date.now()-200*864e5).toISOString().split('T')[0],serviceType:'filter',description:'Ganti Filter Udara',cost:45000,km:5000}],createdAt:now},{id:uid(),name:'Avanza Silver',type:'mobil',brand:'Toyota',model:'Avanza G 1.5',year:2021,currentKm:38200,photo:'',services:(function(){var a=[];for(var i=0;i<SV.length;i++)a.push({id:uid(),type:SV[i].type,label:SV[i].label,icon:SV[i].icon,color:SV[i].color,lastKm:SV[i].type==='oil'?35000:SV[i].type==='brake'?30000:0,lastDate:new Date(Date.now()-(SV[i].type==='oil'?30:SV[i].type==='brake'?100:300)*864e5).toISOString(),intervalKm:Math.round(SV[i].ki*(SV[i].type==='motor'?1:1.5)),intervalDays:SV[i].di});return a})(),history:[{id:uid(),date:new Date(Date.now()-30*864e5).toISOString().split('T')[0],serviceType:'oil',description:'Ganti Oli - Toyota Genuine',cost:320000,km:35000},{id:uid(),date:new Date(Date.now()-100*864e5).toISOString().split('T')[0],serviceType:'brake',description:'Ganti Kampas Rem Depan',cost:450000,km:30000}],createdAt:now}];S.sel=S.v[0].id;sv()}
 
-  /* ====== INSTALL GUIDE ====== */
-  function igB(){
-    if(dI)return'<div class="ig" style="background:var(--pri-bg);border-color:var(--pri-bdr);margin-top:4px" onclick="RC.doInst()"><div class="ig-h"><div class="ig-n" style="background:rgba(0,224,160,.15);color:var(--pri)"><span class="ic">download</span></div><div class="ig-i"><p style="color:var(--pri)">Install RideCheck</p><small style="color:var(--pri);opacity:.8">Tap untuk pasang di homescreen</small></div></div></div>';
-    if(!isFl)return'';
-    return '<div style="margin-top:8px">'+
-      igC('1','Paling Mudah: Netlify Drop','Tanpa install apapun, 30 detik','var(--pri)','var(--pri-bg)','Rekomendasi','<ol><li>Buka <code>app.netlify.com/drop</code></li><li>Drag &amp; drop file HTML ini</li><li>Tunggu ~5 detik selesai</li><li>Klik link yang diberikan</li><li>Chrome HP: tap menu &bull;&bull;&bull; &rarr; "Install app"</li></ol><p style="margin-top:6px;color:var(--pri);font-weight:600">Setelah ini opsi Install pasti muncul!</p>')+
-      igC('2','GitHub Pages (Permanen)','Gratis, bisa diupdate kapanpun','var(--tx2)','var(--bg4)','','<ol><li>Buat akun di <code>github.com</code></li><li>Klik <code>New repository</code></li><li>Nama repo: <code>ridecheck</code></li><li>Upload file HTML, rename <code>index.html</code></li><li>Settings &rarr; Pages &rarr; Source: main</li><li>Buka URL di Chrome HP &rarr; Install</li></ol>')+
-      igC('3','Terminal Lokal','PC + HP WiFi sama','var(--tx2)','var(--bg4)','','<ol><li>PC: buka terminal di folder file</li><li>Jalankan <code>npx serve</code></li><li>HP Chrome buka <code>http://IP-PC:3000</code></li><li>Tap &bull;&bull;&bull; &rarr; "Install app"</li></ol>')+
-      '<div class="tip"><p><strong>Kenapa tidak bisa langsung install dari file?</strong><br>Chrome Android memblokir PWA install dari file lokal (file://). Harus dari https:// atau localhost.</p></div></div>'
-  }
-  function igC(n,t,d,c,bg,bdg,body){
-    return '<div class="ig"><div class="ig-h" onclick="this.parentElement.querySelector(\'.ig-b\').classList.toggle(\'open\')"><div class="ig-n" style="background:'+bg+';color:'+c+'">'+n+'</div><div class="ig-i"><p>'+t+'</p><small>'+d+'</small></div>'+(bdg?'<span style="font-size:9px;font-weight:800;padding:3px 8px;border-radius:8px;background:'+bg+';color:'+c+';text-transform:uppercase;letter-spacing:.4px">'+bdg+'</span>':'<span class="ic" style="color:var(--tx3);font-size:20px">chevron_right</span>')+'</div><div class="ig-b">'+body+'</div></div>'
-  }
-  function doInst(){if(!dI)return;dI.prompt();dI.userChoice.then(function(r){if(r.outcome==='accepted')toast('RideCheck terpasang!');dI=null;render()})}
+function init(){ld();setupPWA();if(!S.v.length)addDemo();go(S.pg||'home');uBg();history.pushState(null,'');document.getElementById('scr').addEventListener('click',function(){if(fO)closeFab()})}
 
-  /* ====== PAGE: VEHICLES ====== */
-  function pVeh(){
-    if(!S.v.length)return '<div class="pg-in"><div style="padding-top:8px;margin-bottom:16px"><h2 style="font-size:22px;font-weight:900">Kendaraan Saya</h2></div><div class="empty"><div class="empty-ic" style="background:var(--bg4)"><span class="ic ic-xxl" style="color:var(--tx3)">garage</span></div><h3>Belum Ada Kendaraan</h3><p>Tambahkan motor atau mobil Anda.</p><button class="bt bt-p" style="margin-top:24px" onclick="RC.openAddV()"><span class="ic ic-s">add</span>Tambah</button></div></div>';
-    var h='<div class="pg-in"><div style="padding-top:8px;margin-bottom:14px"><h2 style="font-size:22px;font-weight:900">Kendaraan Saya</h2><p style="font-size:13px;color:var(--tx3);margin-top:4px">'+S.v.length+' kendaraan</p></div><div style="display:flex;flex-direction:column;gap:10px">';
-    for(var i=0;i<S.v.length;i++){
-      var v=S.v[i],ov=vS(v);
-      var ns=null;if(v.services){ns={rd:999};for(var j=0;j<v.services.length;j++){var c=calc(v,v.services[j]);if(c.rd<ns.rd)ns=c}}
-      h+='<div class="cd" style="cursor:pointer" onclick="RC.openVD(\''+v.id+'\')"><div class="cd-b" style="display:flex;gap:14px;align-items:center"><div class="thb">'+(v.photo?'<img src="'+v.photo+'">':'<span class="ic" style="font-size:26px;color:var(--pri)">'+(v.type==='motor'?'two_wheeler':'directions_car')+'</span>')+'</div><div style="flex:1;min-width:0"><div style="display:flex;align-items:center;gap:8px"><h3 style="font-size:14px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+v.name+'</h3><span class="dot '+DC[ov]+'"></span></div><p style="font-size:12px;color:var(--tx2);margin-top:2px">'+v.brand+' &bull; '+v.year+' &bull; '+fn(v.currentKm)+' km</p>'+(ns?'<p style="font-size:11px;color:var(--tx3);margin-top:2px">Servis: '+(ns.rd<999?(ns.rd+' hari'):'-')+'</p>':'')+'</div><span class="ic" style="font-size:20px;color:var(--tx3)">chevron_right</span></div></div>'
-    }
-    h+='</div></div>';return h
-  }
-
-  /* ====== PAGE: SCHEDULE ====== */
-  function pSch(){
-    var all=[];
-    for(var i=0;i<S.v.length;i++){var v=S.v[i];if(!v.services)continue;for(var j=0;j<v.services.length;j++)all.push({v:v,s:v.services[j],c:calc(v,v.services[j])})}
-    all.sort(function(a,b){return a.c.rd-b.c.rd});
-    var er=[],wa=[],ok=[];
-    for(var i=0;i<all.length;i++){if(all[i].c.lv==='e')er.push(all[i]);else if(all[i].c.lv==='w')wa.push(all[i]);else ok.push(all[i])}
-    function grp(arr,label,color){if(!arr.length)return'';var h='<div class="sl"><span style="color:'+color+'">'+label+'</span><span style="font-size:11px;color:var(--tx3)">'+arr.length+'</span></div><div style="display:flex;flex-direction:column;gap:8px;margin-bottom:4px">';for(var i=0;i<arr.length;i++)h+=scC(arr[i]);h+='</div>';return h}
-    function scC(x){var cl=x.c.lv==='e'?'var(--err)':x.c.lv==='w'?'var(--wrn)':'var(--pri)';return '<div class="cd" style="cursor:pointer" onclick="RC.openSD(\''+x.v.id+'\',\''+x.s.id+'\')"><div class="cd-b" style="padding:14px;display:flex;gap:12px;align-items:center"><div style="width:38px;height:38px;border-radius:10px;background:'+sC(x.s.type)+'15;display:flex;align-items:center;justify-content:center;flex-shrink:0"><span class="ic ic-s" style="color:'+sC(x.s.type)+'">'+sI(x.s.type)+'</span></div><div style="flex:1;min-width:0"><p style="font-size:13px;font-weight:700">'+x.s.label+'</p><p style="font-size:11px;color:var(--tx2)">'+x.v.name+' &bull; '+x.v.brand+'</p><div class="prg" style="margin-top:6px"><div class="prg-f" style="width:'+Math.min(x.c.p*100,100)+'%;background:'+cl+'"></div></div><div style="display:flex;justify-content:space-between;margin-top:4px"><span style="font-size:10px;color:var(--tx3)">'+(x.c.rk>0?fn(x.c.rk)+' km':'Overdue')+'</span><span style="font-size:10px;color:var(--tx3)">'+(x.c.rd>0?x.c.rd+' hari':'Overdue')+'</span></div></div><span class="dot '+DC[x.c.lv]+'"></span></div></div>'}
-    return '<div class="pg-in"><div style="padding-top:8px;margin-bottom:14px"><h2 style="font-size:22px;font-weight:900">Jadwal Servis</h2><p style="font-size:13px;color:var(--tx3);margin-top:4px">'+er.length+' overdue, '+wa.length+' segera, '+ok.length+' aman</p></div>'+(all.length?'':('<div class="empty"><div class="empty-ic" style="background:var(--bg4)"><span class="ic ic-xxl" style="color:var(--tx3)">calendar_month</span></div><h3>Belum Ada Jadwal</h3></div>'))+grp(er,'Harus Servis','var(--err)')+grp(wa,'Mendekati Servis','var(--wrn)')+grp(ok,'Aman','var(--pri)')+'</div>'
-  }
-
-  /* ====== PAGE: HISTORY ====== */
-  function pHis(){
-    var all=[];
-    for(var i=0;i<S.v.length;i++){var v=S.v[i];if(!v.history)continue;for(var j=0;j<v.history.length;j++)all.push({h:v.history[j],vn:v.name,vid:v.id})}
-    all.sort(function(a,b){return new Date(b.h.date)-new Date(a.h.date)});
-    var tot=0;for(var i=0;i<all.length;i++)tot+=(all[i].h.cost||0);
-    var h='<div class="pg-in"><div style="padding-top:8px;margin-bottom:14px"><h2 style="font-size:22px;font-weight:900">Riwayat Servis</h2><p style="font-size:13px;color:var(--tx3);margin-top:4px">'+all.length+' catatan &bull; Total '+fm(tot)+'</p></div>';
-    if(all.length){
-      h+='<div style="display:flex;gap:6px;margin-bottom:12px;overflow-x:auto;padding-bottom:2px"><span class="chip on" onclick="RC.fH(\'all\',this)">Semua</span>';
-      for(var i=0;i<SV.length;i++)h+='<span class="chip" onclick="RC.fH(\''+SV[i].type+'\',this)">'+SV[i].label.replace('Ganti ','').replace('Cek ','')+'</span>';
-      h+='</div>'
-    }
-    h+='<div id="hl">';
-    if(!all.length)h+='<div class="empty"><div class="empty-ic" style="background:var(--bg4)"><span class="ic ic-xxl" style="color:var(--tx3)">receipt_long</span></div><h3>Belum Ada Riwayat</h3></div>';
-    else{h+='<div class="cd" style="padding:0">';for(var i=0;i<all.length;i++){var x=all[i];h+='<div class="hr" data-tp="'+x.h.serviceType+'"><div style="width:34px;height:34px;border-radius:8px;background:'+sC(x.h.serviceType)+'15;display:flex;align-items:center;justify-content:center;flex-shrink:0"><span class="ic" style="font-size:17px;color:'+sC(x.h.serviceType)+'">'+sI(x.h.serviceType)+'</span></div><div style="flex:1;min-width:0"><p style="font-size:13px;font-weight:600">'+(x.h.description||sL(x.h.serviceType))+'</p><p style="font-size:11px;color:var(--tx3)">'+x.vn+' &bull; '+fd(x.h.date)+(x.h.km?' &bull; '+fn(x.h.km)+' km':'')+'</p></div><div style="text-align:right"><span style="font-size:12px;font-weight:700;color:var(--pri);display:block">'+(x.h.cost?fm(x.h.cost):'-')+'</span><button onclick="event.stopPropagation();RC.dH(\''+x.vid+'\',\''+x.h.id+'\')" style="background:none;border:none;cursor:pointer;padding:2px"><span class="ic" style="font-size:15px;color:var(--err)">delete</span></button></div></div>'}h+='</div>'}
-    h+='</div></div>';return h
-  }
-  function fH(t,el){var chips=document.querySelectorAll('.chip');for(var i=0;i<chips.length;i++)chips[i].classList.toggle('on',chips[i]===el);var rows=document.querySelectorAll('.hr');for(var i=0;i<rows.length;i++)rows[i].style.display=(t==='all'||rows[i].getAttribute('data-tp')===t)?'flex':'none'}
-  function dH(vid,hid){var v=findV(vid);if(!v||!v.history)return;v.history=v.history.filter(function(h){return h.id!==hid});sv();toast('Riwayat dihapus','warn');go('his')}
-
-  /* ====== HELPERS ====== */
-  function findV(id){for(var i=0;i<S.v.length;i++)if(S.v[i].id===id)return S.v[i];return null}
-  function findS(v,id){if(!v.services)return null;for(var i=0;i<v.services.length;i++)if(v.services[i].id===id)return v.services[i];return null}
-  function $(id){return document.getElementById(id)}
-
-  /* ====== SHEET: ADD VEHICLE ====== */
-  function openAddV(){closeFab();uP='';
-    openSheet('<div class="ss-hd"><h2>Tambah Kendaraan</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc">'+
-    '<div class="pu" id="phU" onclick="$(\'phI\').click()"><span class="ic ic-l" style="color:var(--tx3)">add_a_photo</span><span style="font-size:12px;color:var(--tx3)">Foto Kendaraan</span></div>'+
-    '<input type="file" id="phI" accept="image/*" style="display:none" onchange="RC.hPH(event)">'+
-    '<div class="fld"><label class="fld-l">Nama Kendaraan</label><input class="fld-i" id="vN" placeholder="cth: Vario 160 Hitam"></div>'+
-    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="fld"><label class="fld-l">Jenis</label><select class="fld-s" id="vT" onchange="RC.uBr()"><option value="motor">Motor</option><option value="mobil">Mobil</option></select></div><div class="fld"><label class="fld-l">Merek</label><select class="fld-s" id="vB"></select></div></div>'+
-    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="fld"><label class="fld-l">Tipe</label><input class="fld-i" id="vM" placeholder="cth: Vario 160"></div><div class="fld"><label class="fld-l">Tahun</label><input class="fld-i" id="vY" type="number" min="1990" max="2025" placeholder="2024"></div></div>'+
-    '<div class="fld"><label class="fld-l">Kilometer Saat Ini</label><input class="fld-i" id="vK" type="number" min="0" placeholder="15000"></div>'+
-    '<button class="bt bt-p bt-f" onclick="RC.svV()">Simpan Kendaraan</button></div>');
-    uBr()
-  }
-  function hPH(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(ev){var img=new Image();img.onload=function(){var cv=document.createElement('canvas'),mx=400,rt=Math.min(mx/img.width,mx/img.height);cv.width=img.width*rt;cv.height=img.height*rt;cv.getContext('2d').drawImage(img,0,0,cv.width,cv.height);uP=cv.toDataURL('image/jpeg',.55);$('phU').innerHTML='<img src="'+uP+'">'};img.src=ev.target.result};r.readAsDataURL(f)}
-  function uBr(sel){var t=$('vT').value,brands=t==='motor'?BM:BC;var h='';for(var i=0;i<brands.length;i++)h+='<option value="'+brands[i]+'"'+(brands[i]===sel?' selected':'')+'>'+brands[i]+'</option>';$('vB').innerHTML=h}
-  function svV(){var n=$('vN').value.trim();if(!n){toast('Nama wajib diisi','err');return}var t=$('vT').value,b=$('vB').value,m=$('vM').value.trim(),y=parseInt($('vY').value)||new Date().getFullYear(),k=parseInt($('vK').value)||0;var now=new Date().toISOString();var svcs=[];for(var i=0;i<SV.length;i++){var s=SV[i];svcs.push({id:uid(),type:s.type,label:s.label,icon:s.icon,color:s.color,lastKm:k,lastDate:now,intervalKm:s.ki,intervalDays:s.di})}var v={id:uid(),name:n,type:t,brand:b,model:m,year:y,currentKm:k,photo:uP,services:svcs,history:[],createdAt:now};S.v.push(v);S.sel=v.id;uP='';sv();closeSheet();toast(n+' ditambahkan');render()}
-
-  /* ====== SHEET: EDIT VEHICLE ====== */
-  function openEV(id){var v=findV(id);if(!v)return;uP=v.photo||'';closeSheet();setTimeout(function(){
-    openSheet('<div class="ss-hd"><h2>Edit Kendaraan</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc">'+
-    '<div class="pu" id="phU" onclick="$(\'phI\').click()">'+(uP?'<img src="'+uP+'">':'<span class="ic ic-l" style="color:var(--tx3)">add_a_photo</span><span style="font-size:12px;color:var(--tx3)">Foto</span>')+'</div>'+
-    '<input type="file" id="phI" accept="image/*" style="display:none" onchange="RC.hPH(event)">'+
-    '<div class="fld"><label class="fld-l">Nama</label><input class="fld-i" id="vN" value="'+v.name+'"></div>'+
-    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="fld"><label class="fld-l">Jenis</label><select class="fld-s" id="vT" onchange="RC.uBr()"><option value="motor"'+(v.type==='motor'?' selected':'')+'>Motor</option><option value="mobil"'+(v.type==='mobil'?' selected':'')+'>Mobil</option></select></div><div class="fld"><label class="fld-l">Merek</label><select class="fld-s" id="vB"></select></div></div>'+
-    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="fld"><label class="fld-l">Tipe</label><input class="fld-i" id="vM" value="'+(v.model||'')+'"></div><div class="fld"><label class="fld-l">Tahun</label><input class="fld-i" id="vY" type="number" value="'+v.year+'"></div></div>'+
-    '<div class="fld"><label class="fld-l">Kilometer</label><input class="fld-i" id="vK" type="number" value="'+v.currentKm+'"></div>'+
-    '<button class="bt bt-p bt-f" onclick="RC.uV(\''+v.id+'\')">Simpan</button>'+
-    '<button class="bt bt-d bt-f" style="margin-top:8px" onclick="RC.cfDel(\''+v.id+'\')"><span class="ic ic-s">delete_forever</span>Hapus Kendaraan</button></div>');
-    uBr(v.brand)
-  },150)}
-  function uV(id){var v=findV(id);if(!v)return;var n=$('vN').value.trim();if(!n){toast('Nama wajib','err');return}v.name=n;v.type=$('vT').value;v.brand=$('vB').value;v.model=$('vM').value.trim();v.year=parseInt($('vY').value)||v.year;v.currentKm=parseInt($('vK').value)||v.currentKm;if(uP!==v.photo)v.photo=uP;uP='';sv();closeSheet();toast('Diperbarui');render()}
-  function cfDel(id){var v=findV(id);if(!v)return;openSheet('<div class="ss-hd"><h2>Hapus</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc" style="text-align:center"><span class="ic ic-xxl" style="color:var(--err);display:block;margin-bottom:12px">delete_forever</span><p style="font-size:15px;font-weight:700;margin-bottom:6px">Hapus '+v.name+'?</p><p style="font-size:13px;color:var(--tx3);margin-bottom:24px">Data hilang permanen.</p><div style="display:flex;gap:12px"><button class="bt bt-s" style="flex:1" onclick="RC.openEV(\''+id+'\')">Batal</button><button class="bt bt-d" style="flex:1" onclick="RC.dV(\''+id+'\')">Hapus</button></div></div>')}
-  function dV(id){S.v=S.v.filter(function(x){return x.id!==id});if(S.sel===id)S.sel=S.v.length?S.v[0].id:null;sv();closeSheet();toast('Dihapus','warn');render()}
-
-  /* ====== SHEET: VEHICLE DETAIL ====== */
-  function openVD(id){var v=findV(id);if(!v)return;var ov=vS(v);openSheet('<div class="ss-hd"><h2>'+v.name+'</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc">'+(v.photo?'<img src="'+v.photo+'" style="width:100%;height:160px;object-fit:cover;border-radius:14px;margin-bottom:16px">':'')+'<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px"><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><p style="font-size:10px;color:var(--tx3);margin-bottom:2px">MEREK</p><p style="font-size:14px;font-weight:700">'+v.brand+'</p></div></div><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><p style="font-size:10px;color:var(--tx3);margin-bottom:2px">TIPE</p><p style="font-size:14px;font-weight:700">'+(v.model||'-')+'</p></div></div><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><p style="font-size:10px;color:var(--tx3);margin-bottom:2px">TAHUN</p><p style="font-size:14px;font-weight:700">'+v.year+'</p></div></div><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><p style="font-size:10px;color:var(--tx3);margin-bottom:2px">KM</p><p style="font-size:14px;font-weight:700">'+fn(v.currentKm)+'</p></div></div></div><div style="display:flex;align-items:center;gap:8px;padding:12px 14px;background:'+(ov==='ok'?'var(--pri-bg)':ov==='w'?'var(--wrn-bg)':'var(--err-bg)')+';border-radius:12px;margin-bottom:20px"><span class="dot '+DC[ov]+'" style="width:14px;height:14px"></span><span style="font-size:14px;font-weight:700;color:'+LC[ov]+'">'+LT[ov]+'</span></div><div style="display:flex;gap:10px"><button class="bt bt-p" style="flex:1" onclick="RC.closeSheet();RC.openEV(\''+v.id+'\')"><span class="ic ic-s">edit</span>Edit</button><button class="bt bt-s" style="flex:1" onclick="RC.closeSheet();RC.selV(\''+v.id+'\');RC.go(\'home\')"><span class="ic ic-s">space_dashboard</span>Dashboard</button></div></div>')}
-
-  /* ====== SHEET: UPDATE KM ====== */
-  function openUKm(id){var v=findV(id);if(!v)return;openSheet('<div class="ss-hd"><h2>Update Kilometer</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc"><p style="font-size:13px;color:var(--tx2);margin-bottom:4px">'+v.name+'</p><p style="font-size:12px;color:var(--tx3);margin-bottom:16px">KM saat ini: '+fn(v.currentKm)+'</p><div class="fld"><label class="fld-l">KM Baru</label><input class="fld-i" id="nkm" type="number" min="'+v.currentKm+'" value="'+v.currentKm+'"></div><button class="bt bt-p bt-f" onclick="RC.dUKm(\''+v.id+'\')">Update</button></div>')}
-  function dUKm(id){var v=findV(id);if(!v)return;var n=parseInt($('nkm').value);if(isNaN(n)||n<v.currentKm){toast('KM harus lebih besar','err');return}v.currentKm=n;sv();closeSheet();toast('KM → '+fn(n));render()}
-
-  /* ====== SHEET: SERVICE DETAIL ====== */
-  function openSD(vid,sid){var v=findV(vid);if(!v)return;var s=findS(v,sid);if(!s)return;var c=calc(v,s),cl=c.lv==='e'?'var(--err)':c.lv==='w'?'var(--wrn)':'var(--pri)';openSheet('<div class="ss-hd"><h2>'+s.label+'</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc"><p style="font-size:13px;color:var(--tx2);margin-bottom:16px">'+v.name+' &bull; '+v.brand+'</p><div style="display:flex;align-items:center;gap:10px;padding:14px;background:'+(c.lv==='ok'?'var(--pri-bg)':c.lv==='w'?'var(--wrn-bg)':'var(--err-bg)')+';border-radius:12px;margin-bottom:16px"><span class="dot '+DC[c.lv]+'" style="width:14px;height:14px"></span><div><p style="font-size:15px;font-weight:800;color:'+LC[c.lv]+'">'+LT[c.lv]+'</p><p style="font-size:11px;color:var(--tx3);margin-top:2px">'+Math.round(c.p*100)+'% menuju jadwal</p></div></div><div class="prg" style="height:10px;border-radius:5px;margin-bottom:16px"><div class="prg-f" style="width:'+Math.min(c.p*100,100)+'%;background:'+cl+';border-radius:5px"></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px"><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><span class="ic" style="font-size:20px;color:var(--pri);display:block;margin-bottom:4px">speed</span><p style="font-size:10px;color:var(--tx3);margin-bottom:2px">KM Tersisa</p><p style="font-size:16px;font-weight:800">'+fn(c.rk)+'</p></div></div><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><span class="ic" style="font-size:20px;color:var(--pri);display:block;margin-bottom:4px">event</span><p style="font-size:10px;color:var(--tx3);margin-bottom:2px">Hari Tersisa</p><p style="font-size:16px;font-weight:800">'+c.rd+'</p></div></div><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><p style="font-size:10px;color:var(--tx3);margin-bottom:2px">INT. KM</p><p style="font-size:14px;font-weight:700">'+fn(s.intervalKm)+'</p></div></div><div class="cd"><div class="cd-b" style="padding:12px;text-align:center"><p style="font-size:10px;color:var(--tx3);margin-bottom:2px">INT. HARI</p><p style="font-size:14px;font-weight:700">'+s.intervalDays+'</p></div></div></div><div style="display:flex;gap:10px"><button class="bt bt-p" style="flex:1" onclick="RC.closeSheet();RC.oRS(\''+vid+'\',\''+sid+'\')"><span class="ic ic-s">build</span>Catat Servis</button><button class="bt bt-s" style="flex:1" onclick="RC.closeSheet();RC.oEI(\''+vid+'\',\''+sid+'\')"><span class="ic ic-s">tune</span>Atur Interval</button></div></div>')}
-
-  /* ====== SHEET: RECORD SERVICE ====== */
-  function openAddSR(){closeFab();if(!S.v.length){toast('Tambahkan kendaraan dulu','warn');return}
-    var h='<div class="ss-hd"><h2>Catat Servis</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc">';
-    h+='<div class="fld"><label class="fld-l">Kendaraan</label><select class="fld-s" id="srV">';for(var i=0;i<S.v.length;i++)h+='<option value="'+S.v[i].id+'">'+S.v[i].name+' ('+S.v[i].brand+')</option>';h+='</select></div>';
-    h+='<div class="fld"><label class="fld-l">Jenis</label><select class="fld-s" id="srT" onchange="$(\'dG\').style.display=this.value===\'other\'?\'block\':\'none\'">';for(var i=0;i<SV.length;i++)h+='<option value="'+SV[i].type+'">'+SV[i].label+'</option>';h+='<option value="other">Lainnya</option></select></div>';
-    h+='<div class="fld" id="dG" style="display:none"><label class="fld-l">Deskripsi</label><input class="fld-i" id="srD" placeholder="Deskripsi"></div>';
-    h+='<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="fld"><label class="fld-l">Tanggal</label><input class="fld-i" id="srDt" type="date" value="'+new Date().toISOString().split('T')[0]+'"></div><div class="fld"><label class="fld-l">KM</label><input class="fld-i" id="srKm" type="number" min="0" placeholder="15000"></div></div>';
-    h+='<div class="fld"><label class="fld-l">Biaya (Rp)</label><input class="fld-i" id="srC" type="number" min="0" placeholder="0"></div>';
-    h+='<button class="bt bt-p bt-f" onclick="RC.sSR()">Simpan</button></div>';
-    openSheet(h)
-  }
-  function oRS(vid,sid){var v=findV(vid);if(!v)return;var s=findS(v,sid);if(!s)return;openSheet('<div class="ss-hd"><h2>Catat '+s.label+'</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc"><p style="font-size:13px;color:var(--tx2);margin-bottom:14px">'+v.name+' &bull; KM terakhir: '+fn(s.lastKm)+'</p><div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="fld"><label class="fld-l">Tanggal</label><input class="fld-i" id="srDt" type="date" value="'+new Date().toISOString().split('T')[0]+'"></div><div class="fld"><label class="fld-l">KM</label><input class="fld-i" id="srKm" type="number" min="'+s.lastKm+'" value="'+v.currentKm+'"></div></div><div class="fld"><label class="fld-l">Biaya (Rp)</label><input class="fld-i" id="srC" type="number" min="0" placeholder="0"></div><div class="fld"><label class="fld-l">Catatan</label><textarea class="fld-t" id="srN" placeholder="Opsional..."></textarea></div><button class="bt bt-p bt-f" onclick="RC.dRS(\''+vid+'\',\''+sid+'\')">Simpan & Reset Jadwal</button></div>')}
-  function dRS(vid,sid){var v=findV(vid);if(!v)return;var s=findS(v,sid);if(!s)return;var dt=$('srDt').value,km=parseInt($('srKm').value),cost=parseInt($('srC').value)||0,note=$('srN')?$('srN').value.trim():'';if(!dt){toast('Tanggal wajib','err');return}if(isNaN(km)||km<s.lastKm){toast('KM harus lebih besar dari terakhir','err');return}if(!v.history)v.history=[];v.history.push({id:uid(),date:dt,serviceType:s.type,description:note||s.label,cost:cost,km:km});s.lastKm=km;s.lastDate=new Date(dt).toISOString();if(km>v.currentKm)v.currentKm=km;sv();closeSheet();toast(s.label+' dicatat');render()}
-  function sSR(){var vid=$('srV').value,type=$('srT').value,dt=$('srDt').value,km=parseInt($('srKm').value)||0,cost=parseInt($('srC').value)||0,desc=type==='other'?($('srD')?$('srD').value.trim():''):'';if(!dt){toast('Tanggal wajib','err');return}var v=findV(vid);if(!v)return;if(!v.history)v.history=[];v.history.push({id:uid(),date:dt,serviceType:type,description:desc||sL(type),cost:cost,km:km||undefined});var svc=findS(v,type);if(svc&&km>0){svc.lastKm=km;svc.lastDate=new Date(dt).toISOString();if(km>v.currentKm)v.currentKm=km}else if(svc)svc.lastDate=new Date(dt).toISOString();sv();closeSheet();toast('Disimpan');render()}
-
-  /* ====== SHEET: EDIT INTERVAL ====== */
-  function oEI(vid,sid){var v=findV(vid);if(!v)return;var s=findS(v,sid);if(!s)return;openSheet('<div class="ss-hd"><h2>Atur Interval</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc"><p style="font-size:14px;font-weight:700;margin-bottom:4px">'+s.label+'</p><p style="font-size:12px;color:var(--tx3);margin-bottom:16px">'+v.name+'</p><div class="fld"><label class="fld-l">Interval KM</label><input class="fld-i" id="eIK" type="number" min="0" value="'+s.intervalKm+'"></div><div class="fld"><label class="fld-l">Interval Hari</label><input class="fld-i" id="eID" type="number" min="0" value="'+s.intervalDays+'"></div><div class="fld"><label class="fld-l">KM Terakhir</label><input class="fld-i" id="eLK" type="number" min="0" value="'+s.lastKm+'"></div><div class="fld"><label class="fld-l">Tanggal Terakhir</label><input class="fld-i" id="eLD" type="date" value="'+(s.lastDate?new Date(s.lastDate).toISOString().split('T')[0]:'')+'"></div><button class="bt bt-p bt-f" onclick="RC.sI(\''+vid+'\',\''+sid+'\')">Simpan</button></div>')}
-  function sI(vid,sid){var v=findV(vid);if(!v)return;var s=findS(v,sid);if(!s)return;var ik=parseInt($('eIK').value)||0,id=parseInt($('eID').value)||0,lk=parseInt($('eLK').value)||0,ld=$('eLD').value;if(!ik&&!id){toast('Isi minimal satu interval','err');return}s.intervalKm=ik;s.intervalDays=id;s.lastKm=lk;if(ld)s.lastDate=new Date(ld).toISOString();sv();closeSheet();toast('Interval diperbarui');render()}
-
-  /* ====== SHEET: SETTINGS ====== */
-  function openSettings(){openSheet('<div class="ss-hd"><h2>Pengaturan</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc"><p style="font-size:11px;font-weight:700;color:var(--tx2);margin-bottom:12px;text-transform:uppercase;letter-spacing:.6px">Pengingat</p><div style="display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--bdr)"><div><p style="font-size:14px;font-weight:600">Notifikasi Browser</p><p style="font-size:11px;color:var(--tx3)">Notifikasi servis</p></div><div class="tgl'+(C.nf?' on':'')+'" onclick="RC.tCf(\'nf\',this)"></div></div><div class="fld" style="margin-top:14px"><label class="fld-l">Pengingat sebelum servis (hari)</label><input class="fld-i" type="number" min="1" max="30" value="'+C.rd+'" onchange="C.rd=parseInt(this.value)||7;sv()"></div><div class="fld"><label class="fld-l">Pengingat sebelum servis (km)</label><input class="fld-i" type="number" min="0" value="'+C.rk+'" onchange="C.rk=parseInt(this.value)||500;sv()"></div><p style="font-size:11px;font-weight:700;color:var(--tx2);margin:20px 0 12px;text-transform:uppercase;letter-spacing:.6px">Data</p><button class="bt bt-s bt-f" style="margin-bottom:8px" onclick="RC.expD()"><span class="ic ic-s">download</span>Export JSON</button><button class="bt bt-s bt-f" style="margin-bottom:8px" onclick="$(\'impF\').click()"><span class="ic ic-s">upload</span>Import Data</button><input type="file" id="impF" accept=".json" style="display:none" onchange="RC.impD(event)"><button class="bt bt-d bt-f" onclick="RC.clrA()"><span class="ic ic-s">delete_forever</span>Hapus Semua Data</button><div style="text-align:center;margin-top:28px;padding-top:16px;border-top:1px solid var(--bdr)"><p style="font-size:16px;font-weight:900;color:var(--pri)">RideCheck</p><p style="font-size:11px;color:var(--tx3);margin-top:4px">v5.0.0</p></div></div>');if(C.nf&&'Notification'in window&&Notification.permission==='default')Notification.requestPermission()}
-  function tCf(k,el){C[k]=!C[k];el.classList.toggle('on',C[k]);sv();if(k==='nf'&&C.nf&&'Notification'in window)Notification.requestPermission()}
-  function expD(){var d=JSON.stringify({vehicles:S.v,settings:C},null,2);var b=new Blob([d],{type:'application/json'});var u=URL.createObjectURL(b);var a=document.createElement('a');a.href=u;a.download='ridecheck_'+new Date().toISOString().split('T')[0]+'.json';a.click();URL.revokeObjectURL(u);toast('Data diexport')}
-  function impD(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(ev){try{var d=JSON.parse(ev.target.result);if(d.vehicles){S.v=d.vehicles;S.sel=S.v.length?S.v[0].id:null}if(d.settings)for(var k in d.settings)C[k]=d.settings[k];sv();closeSheet();toast('Data diimport');render()}catch(err){toast('File tidak valid','err')}};r.readAsText(f);e.target.value=''}
-  function clrA(){openSheet('<div class="ss-hd"><h2>Hapus Semua</h2><button class="ss-x" onclick="RC.closeSheet()"><span class="ic ic-s">close</span></button></div><div class="ss-sc" style="text-align:center"><span class="ic ic-xxl" style="color:var(--err);display:block;margin-bottom:12px">warning</span><p style="font-size:15px;font-weight:700;margin-bottom:6px">Hapus semua data?</p><p style="font-size:13px;color:var(--tx3);margin-bottom:24px">Tidak bisa dibatalkan.</p><div style="display:flex;gap:12px"><button class="bt bt-s" style="flex:1" onclick="RC.openSettings()">Batal</button><button class="bt bt-d" style="flex:1" onclick="RC.dCl()">Hapus</button></div></div>')}
-  function dCl(){S={v:[],sel:null,pg:'home'};C={rd:7,rk:500,nf:true};sv();closeSheet();toast('Semua data dihapus','warn');render()}
-
-  /* ====== PWA ====== */
-  function setupPWA(){if(isFl)return;try{var m={name:'RideCheck',short_name:'RideCheck',start_url:location.href,display:'standalone',orientation:'portrait',background_color:'#0b1420',theme_color:'#0b1420',icons:[{src:'data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><rect width="192" height="192" rx="40" fill="#0b1420"/><rect x="10" y="10" width="172" height="172" rx="32" fill="#142236"/><text x="96" y="78" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="900" fill="#00e0a0">Ride</text><text x="96" y="128" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="900" fill="#6cffcb">Check</text></svg>'),sizes:'192x192',type:'image/svg+xml',purpose:'any maskable'}]};var l=document.createElement('link');l.rel='manifest';l.href=URL.createObjectURL(new Blob([JSON.stringify(m)],{type:'application/json'}));document.head.appendChild(l)}catch(e){}}
-  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dI=e;render()});
-
-  /* ====== BACK BUTTON ====== */
-  window.addEventListener('popstate',function(){if($('np').classList.contains('open')){toggleNotif();history.pushState(null,'');return}if($('so').classList.contains('open')){closeSheet();history.pushState(null,'');return}if(fO){closeFab();history.pushState(null,'')}});
-
-  /* ====== DEMO DATA ====== */
-  function addDemo(){var now=new Date().toISOString();var mkSv=function(offsets){var arr=[];for(var i=0;i<SV.length;i++){var off=offsets[i]||0;arr.push({id:uid(),type:SV[i].type,label:SV[i].label,icon:SV[i].icon,color:SV[i].color,lastKm:SV[i].type==='oil'?10000:SV[i].type==='filter'?5000:0,lastDate:new Date(Date.now()-off*864e5).toISOString(),intervalKm:SV[i].ki,intervalDays:SV[i].di})}return arr};S.v=[{id:uid(),name:'Vario 160 Hitam',type:'motor',brand:'Honda',model:'Vario 160',year:2023,currentKm:14500,photo:'',services:mkSv({oil:60,filter:200,brake:120,battery:300}),history:[{id:uid(),date:new Date(Date.now()-60*864e5).toISOString().split('T')[0],serviceType:'oil',description:'Ganti Oli - Yamalube',cost:85000,km:10000},{id:uid(),date:new Date(Date.now()-200*864e5).toISOString().split('T')[0],serviceType:'filter',description:'Ganti Filter Udara',cost:45000,km:5000}],createdAt:now},{id:uid(),name:'Avanza Silver',type:'mobil',brand:'Toyota',model:'Avanza G 1.5',year:2021,currentKm:38200,photo:'',services:(function(){var arr=[];for(var i=0;i<SV.length;i++)arr.push({id:uid(),type:SV[i].type,label:SV[i].label,icon:SV[i].icon,color:SV[i].color,lastKm:SV[i].type==='oil'?35000:SV[i].type==='brake'?30000:0,lastDate:new Date(Date.now()-(SV[i].type==='oil'?30:SV[i].type==='brake'?100:300)*864e5).toISOString(),intervalKm:Math.round(SV[i].ki*(SV[i].type==='motor'?1:1.5)),intervalDays:SV[i].di});return arr})(),history:[{id:uid(),date:new Date(Date.now()-30*864e5).toISOString().split('T')[0],serviceType:'oil',description:'Ganti Oli - Toyota Genuine',cost:320000,km:35000},{id:uid(),date:new Date(Date.now()-100*864e5).toISOString().split('T')[0],serviceType:'brake',description:'Ganti Kampas Rem Depan',cost:450000,km:30000}],createdAt:now}];S.sel=S.v[0].id;sv()}
-
-  /* ====== INIT ====== */
-  function init(){ld();setupPWA();if(!S.v.length)addDemo();go(S.pg||'home');uBg();history.pushState(null,'');document.getElementById('scr').addEventListener('click',function(){if(fO)closeFab()})}
-
-  /* ====== PUBLIC API ====== */
-  return{
-    go:go,toggleFab:toggleFab,closeFab:closeFab,toggleNotif:toggleNotif,closeSheet:closeSheet,
-    openAddV:openAddV,openAddSR:openAddSR,openSettings:openSettings,
-    openVD:openVD,openEV:openEV,openUKm:openUKm,openSD:openSD,
-    oRS:oRS,oEI:oEI,cfDel:cfDel,
-    hPH:hPH,uBr:uBr,svV:svV,uV:uV,dV:dV,dUKm:dUKm,dRS:dRS,sSR:sSR,sI:sI,
-    tCf:tCf,expD:expD,impD:impD,clrA:clrA,dCl:dCl,
-    fH:fH,dH:dH,selV:selV,cyV:cyV,doInst:doInst,
-    toast:toast
-  }
+return{go:go,toggleFab:toggleFab,closeFab:closeFab,toggleNotif:toggleNotif,closeSheet:closeSheet,openAddV:openAddV,openAddSR:openAddSR,openSettings:openSettings,openVD:openVD,openEV:openEV,openUKm:openUKm,openSD:openSD,oRS:oRS,oEI:oEI,cfDel:cfDel,hPH:hPH,uBr:uBr,svV:svV,uV:uV,dV:dV,dUKm:dUKm,dRS:dRS,sSR:sSR,sI:sI,tCf:tCf,expD:expD,impD:impD,clrA:clrA,dCl:dCl,fH:fH,dH:dH,selV:selV,cyV:cyV,doInst:doInst,toast:toast}
 })();
-
 RC.init();
 </script>
 </body>
